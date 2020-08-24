@@ -10,10 +10,10 @@
             return {
                 name: "bgCircle" + this._uid,
                 radius: anime.random(10, 100),
-                backgroundColor:
-                    anime.random(0, 1) > 0.5
-                        ? "rgb(251, 202, 80)"
-                        : "rgb(80, 195, 255)",
+                // backgroundColor:
+                //     anime.random(0, 1) > 0.5
+                //         ? "rgb(251, 202, 80)"
+                //         : "rgb(80, 195, 255)",
             }
         },
         created() {},

@@ -1,0 +1,127 @@
+<template>
+    <div class="banner">
+        <div class="container">
+            <h1 class="title">链接信用 助力原创</h1>
+            <div class="line"></div>
+            <h3 class="desc">
+                云画链是基于Substrate开发的跨链桥接网络，专注于建设
+                未来资产互联网络，包括数字文化资产拍卖市场、数字艺术品兑换等领域
+            </h3>
+            <div class="sub-body">
+                <input type="text" placeholder="E-mail" />
+                <button>获取更新</button>
+            </div>
+            <CusCircle class="circle1"></CusCircle>
+            <CusCircle class="circle2"></CusCircle>
+        </div>
+        <CusCircle class="circle3"></CusCircle>
+        <CusCircle class="circle4"></CusCircle>
+    </div>
+</template>
+
+<script>
+    import CusCircle from "@/components/Circle"
+    export default {
+        components: {
+            CusCircle,
+        },
+    }
+</script>
+
+<style scoped lang="scss">
+    .banner {
+        padding-top: 70px;
+        position: relative;
+    }
+    .container {
+        position: relative;
+    }
+    .title {
+        font-size: 46px;
+        font-weight: 600;
+        text-align: left;
+        color: #101010;
+        line-height: 60px;
+        letter-spacing: 5px;
+        margin-bottom: 51px;
+    }
+    .line {
+        width: 156px;
+        height: 5px;
+        background: linear-gradient(to right, #ffca50 0%, #50c3ff 100%);
+        margin-bottom: 41px;
+    }
+    .desc {
+        max-width: 50%;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        color: #101010;
+        line-height: 32px;
+        letter-spacing: 1px;
+        margin-bottom: 78px;
+    }
+    .sub-body {
+        text-align: left;
+        input {
+            width: 333px;
+            height: 53px;
+            background: #51c2ff;
+            border-radius: 27px;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            color: #606060;
+            letter-spacing: 0px;
+            text-align: left;
+            outline: none;
+            margin-right: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        button {
+            background: #ffca50;
+            border-radius: 27px;
+            height: 53px;
+            width: 139px;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            color: #ffffff;
+            letter-spacing: 1px;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+    .circle {
+        position: absolute;
+    }
+    .circle1 {
+        right: 8%;
+        top: 0;
+        width: 216px;
+        height: 216px;
+        background-color: #50c3ff;
+    }
+    .circle2 {
+        bottom: 0;
+        right: 30%;
+        width: 84px;
+        height: 84px;
+        background-color: #ffca50;
+    }
+    .circle3 {
+        bottom: 20%;
+        right: 5%;
+        width: 39px;
+        height: 39px;
+        background-color: #50c3ff;
+    }
+    .circle4 {
+        bottom: 15%;
+        left: 5%;
+        width: 45px;
+        height: 45px;
+        background-color: #ffca50;
+    }
+</style>

@@ -23,7 +23,13 @@
 </template>
 
 <script>
-    export default {}
+    export default {
+        data() {
+            return {
+                lang: "",
+            }
+        },
+    }
 </script>
 
 <style scoped lang="scss">

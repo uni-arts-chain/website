@@ -1,9 +1,16 @@
 <template>
-    <div></div>
+    <div class="home">
+        <Banner></Banner>
+    </div>
 </template>
 
 <script>
-    export default {}
+    import Banner from "./Banner.vue"
+    export default {
+        components: {
+            Banner,
+        },
+    }
 </script>
 
 <style></style>
