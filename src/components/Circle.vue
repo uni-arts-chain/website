@@ -1,11 +1,5 @@
 <template>
-    <div
-        class="circle"
-        :ref="name"
-        :style="`width: ${radius}px;
-                height:${radius}px;
-                background-color:${backgroundColor};`"
-    ></div>
+    <div class="circle" :ref="name"></div>
 </template>
 
 <script>
