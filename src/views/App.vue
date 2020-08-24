@@ -1,10 +1,22 @@
 <template>
-    <div id="app"></div>
+    <div id="app">
+        <NavBar></NavBar>
+        <main>
+            <router-view></router-view>
+        </main>
+        <FooterBar></FooterBar>
+    </div>
 </template>
 
 <script>
+    import NavBar from "@/views/Layout/NavBar"
+    import FooterBar from "@/views/Layout/FooterBar"
     export default {
         name: "App",
+        components: {
+            NavBar,
+            FooterBar,
+        },
         data() {
             return {}
         },
@@ -20,7 +32,13 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        height: 100%;
+        min-height: 100%;
         position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1 0 auto;
     }
 </style>
