@@ -60,17 +60,10 @@
 </script>
 
 <style scoped lang="scss">
-    .background {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
     .circle {
         border-radius: 50%;
         position: absolute;
+        z-index: -1;
     }
 
     @keyframes Circle {
