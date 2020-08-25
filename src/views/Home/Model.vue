@@ -159,7 +159,7 @@
         overflow: hidden;
     }
     .left {
-        width: 45%;
+        width: 40%;
         float: left;
         .item {
             margin-bottom: 57px;

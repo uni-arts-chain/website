@@ -8,7 +8,7 @@
                 未来资产互联网络，包括数字文化资产拍卖市场、数字艺术品兑换等领域
             </h3>
             <div class="sub-body">
-                <input type="text" placeholder="E-mail" />
+                <input type="text" placeholder="name@email.com" />
                 <button>获取更新</button>
             </div>
             <CusCircle class="circle1"></CusCircle>
@@ -30,7 +30,7 @@
 
 <style scoped lang="scss">
     .banner {
-        padding-top: 70px;
+        padding-top: 60px;
         position: relative;
     }
     .container {
@@ -52,7 +52,7 @@
         margin-bottom: 41px;
     }
     .desc {
-        max-width: 50%;
+        max-width: 52%;
         font-size: 18px;
         font-weight: 400;
         text-align: left;
@@ -71,13 +71,29 @@
             font-size: 18px;
             font-weight: 400;
             text-align: center;
-            color: #606060;
+            color: white;
             letter-spacing: 0px;
             text-align: left;
             outline: none;
             margin-right: 10px;
             padding-left: 25px;
             padding-right: 25px;
+        }
+        input::-webkit-input-placeholder {
+            /* WebKit browsers */
+            color: #6b6b6b;
+        }
+        input:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #6b6b6b;
+        }
+        input::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #6b6b6b;
+        }
+        input:-ms-input-placeholder {
+            /* Internet Explorer 10+ */
+            color: #6b6b6b;
         }
         button {
             background: #ffca50;
