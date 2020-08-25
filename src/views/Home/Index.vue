@@ -34,4 +34,8 @@
     }
 </script>
 
-<style></style>
+<style scoped lang="scss">
+    .home {
+        overflow: hidden;
+    }
+</style>

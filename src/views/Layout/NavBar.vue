@@ -5,13 +5,27 @@
             <div class="right">
                 <ul>
                     <li class="active">首页</li>
-                    <li>白皮书</li>
-                    <li>测试网络</li>
-                    <li>浏览器</li>
+                    <li>
+                        <a
+                            target="_self"
+                            href="https://raw.githubusercontent.com/uni-arts-chain/UniArts-white-paper/master/uniarts-white-paper.pdf"
+                            >白皮书</a
+                        >
+                    </li>
+                    <li><a>测试网络</a></li>
+                    <li>
+                        <a target="_blank" href="https://polkadot.subscan.io"
+                            >浏览器</a
+                        >
+                    </li>
                     <li>公告</li>
                     <li class="other">
                         <a class="wallet"></a>
-                        <a class="github"></a>
+                        <a
+                            class="github"
+                            target="_blank"
+                            href="https://github.com/uni-arts-chain"
+                        ></a>
                         <div
                             :class="{ 'lang en': lang, 'lang zh-cn': !lang }"
                         ></div>
@@ -34,9 +48,10 @@
 
 <style scoped lang="scss">
     nav {
-        height: 90px;
-        // background-color: #232344;
+        height: 120px;
         flex: 0 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .container {
@@ -69,6 +84,10 @@
             padding-bottom: 3px;
             padding-right: 12px;
             cursor: pointer;
+        }
+        li a {
+            color: inherit;
+            text-decoration: none;
         }
         li.active {
             background: #51c2ff;

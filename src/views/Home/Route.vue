@@ -140,7 +140,7 @@
                 margin-bottom: 42px;
             }
             li {
-                margin-left: 20px;
+                margin-left: 10px;
                 text-align: left;
                 position: relative;
                 padding: 3px 0;

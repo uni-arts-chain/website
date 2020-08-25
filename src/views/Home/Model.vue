@@ -39,7 +39,7 @@
             </div>
             <div class="right">
                 <div class="table" style="margin-bottom: 50px;">
-                    <div class="title">UART分配方案</div>
+                    <div class="title"><span>UART</span>分配方案</div>
                     <div class="table-body">
                         <div class="header">
                             <div class="td">分类</div>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div class="table bottom-table">
-                    <div class="title">UINK分配比例</div>
+                    <div class="title"><span>UINK</span>分配比例</div>
                     <div class="table-body">
                         <div class="header">
                             <div class="td">获得方</div>
@@ -165,13 +165,13 @@
             margin-bottom: 57px;
             .title {
                 font-size: 24px;
-                font-weight: 600;
                 line-height: 30px;
                 color: #101010;
                 letter-spacing: 0px;
                 margin-bottom: 23px;
                 display: flex;
                 align-items: flex-end;
+                font-weight: 600;
             }
             .title > img {
                 width: 32px;
@@ -196,10 +196,12 @@
             .title {
                 text-align: right;
                 font-size: 18px;
-                font-weight: 600;
                 color: #101010;
                 letter-spacing: 0px;
                 margin-bottom: 12px;
+                span {
+                    font-weight: 600;
+                }
             }
             .header,
             .body {

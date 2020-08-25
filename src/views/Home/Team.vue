@@ -16,7 +16,8 @@
         width: 100%;
         height: 631px;
         background: url(~@/assets/images/team@2x.png) no-repeat;
-        background-size: 100% auto;
+        background-size: cover;
+        background-position: center;
         display: flex;
         flex-direction: column;
         align-items: center;

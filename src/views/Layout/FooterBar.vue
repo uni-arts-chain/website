@@ -6,22 +6,22 @@
                     <img src="@/assets/images/bottom-logo@2x.png" alt="" />
                     <ul>
                         <li>
-                            <img src="@/assets/images/wechat@2x.png" alt="" />
+                            <a></a>
                         </li>
                         <li>
-                            <img src="@/assets/images/telegram@2x.png" alt="" />
+                            <a></a>
                         </li>
                         <li>
-                            <img src="@/assets/images/email@2x.png" alt="" />
+                            <a></a>
                         </li>
                         <li>
-                            <img
-                                src="@/assets/images/bottom-github@2x.png"
-                                alt=""
-                            />
+                            <a
+                                target="_blank"
+                                href="https://polkadot.subscan.io"
+                            ></a>
                         </li>
                         <li>
-                            <img src="@/assets/images/weibo@2x.png" alt="" />
+                            <a></a>
                         </li>
                     </ul>
                 </div>
@@ -29,7 +29,6 @@
                     <span>摘要</span>
                     <ul>
                         <li>公告</li>
-                        <li>浏览器</li>
                         <li>联系我们</li>
                     </ul>
                 </div>
@@ -38,14 +37,26 @@
                     <ul>
                         <li>测试网络</li>
                         <li>Telemetry</li>
-                        <li>Genepaper</li>
+                        <li>
+                            <a
+                                target="_self"
+                                href="https://raw.githubusercontent.com/uni-arts-chain/UniArts-white-paper/master/uniarts-white-paper.pdf"
+                                >Whitepaper</a
+                            >
+                        </li>
                     </ul>
                 </div>
                 <div class="col">
                     <span>产品</span>
                     <ul>
-                        <li>QTS</li>
-                        <li>浏览器</li>
+                        <li>云画链</li>
+                        <li>
+                            <a
+                                target="_blank"
+                                href="https://polkadot.subscan.io"
+                                >浏览器</a
+                            >
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -112,6 +123,10 @@
             margin-bottom: 12px;
             // line-height: 30px;
         }
+        .col ul li a {
+            color: inherit;
+            text-decoration: none;
+        }
 
         .bottom-logo {
             width: 31%;
@@ -123,10 +138,36 @@
                 width: 24px;
                 height: 24px;
                 margin-right: 18px;
-                cursor: pointer;
+            }
+            ul li a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                color: inherit;
+                text-decoration: none;
             }
             ul li > img {
                 height: 100%;
+            }
+            ul li:nth-child(1) {
+                background: url(~@/assets/images/wechat@2x.png) no-repeat;
+                background-size: 24px 24px;
+            }
+            ul li:nth-child(2) {
+                background: url(~@/assets/images/telegram@2x.png) no-repeat;
+                background-size: 24px 24px;
+            }
+            ul li:nth-child(3) {
+                background: url(~@/assets/images/email@2x.png) no-repeat;
+                background-size: 24px 24px;
+            }
+            ul li:nth-child(4) {
+                background: url(~@/assets/images/bottom-github@2x.png) no-repeat;
+                background-size: 24px 24px;
+            }
+            ul li:nth-child(5) {
+                background: url(~@/assets/images/weibo@2x.png) no-repeat;
+                background-size: 24px 24px;
             }
             > img {
                 width: 138px;
