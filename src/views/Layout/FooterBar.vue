@@ -39,8 +39,8 @@
                         <li>Telemetry</li>
                         <li>
                             <a
-                                target="_self"
-                                href="https://raw.githubusercontent.com/uni-arts-chain/UniArts-white-paper/master/uniarts-white-paper.pdf"
+                                target="_blank"
+                                href="https://github.com/uni-arts-chain/UniArts-white-paper/blob/master/uniarts-white-paper.pdf"
                                 >Whitepaper</a
                             >
                         </li>

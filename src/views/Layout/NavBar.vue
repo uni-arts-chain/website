@@ -7,8 +7,8 @@
                     <li class="active">首页</li>
                     <li>
                         <a
-                            target="_self"
-                            href="https://raw.githubusercontent.com/uni-arts-chain/UniArts-white-paper/master/uniarts-white-paper.pdf"
+                            target="_blank"
+                            href="https://github.com/uni-arts-chain/UniArts-white-paper/blob/master/uniarts-white-paper.pdf"
                             >白皮书</a
                         >
                     </li>
