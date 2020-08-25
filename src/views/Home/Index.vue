@@ -6,6 +6,8 @@
         <Model></Model>
         <Ecology></Ecology>
         <Route></Route>
+        <Team></Team>
+        <Partner></Partner>
     </div>
 </template>
 
@@ -16,6 +18,8 @@
     import Model from "./Model.vue"
     import Ecology from "./Ecology.vue"
     import Route from "./Route.vue"
+    import Team from "./Team.vue"
+    import Partner from "./Partner.vue"
     export default {
         components: {
             Banner,
@@ -24,6 +28,8 @@
             Model,
             Ecology,
             Route,
+            Team,
+            Partner,
         },
     }
 </script>
