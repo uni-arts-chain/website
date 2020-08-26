@@ -1,7 +1,7 @@
 <template>
     <div class="team">
-        <h1>开发团队</h1>
-        <p>捷链团队将支持云画链网络的开发</p>
+        <h1>{{ $t("home.team-title") }}</h1>
+        <p>{{ $t("home.team-desc") }}</p>
     </div>
 </template>
 

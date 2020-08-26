@@ -1,15 +1,12 @@
 <template>
     <div class="banner">
         <div class="container">
-            <h1 class="title">链接信用 助力原创</h1>
+            <h1 class="title">{{ $t("home.banner-title") }}</h1>
             <div class="line"></div>
-            <h3 class="desc">
-                云画链是基于Substrate开发的跨链桥接网络，专注于建设
-                未来资产互联网络，包括数字文化资产拍卖市场、数字艺术品兑换等领域
-            </h3>
+            <h3 class="desc">{{ $t("home.banner-desc") }}</h3>
             <div class="sub-body">
                 <input type="text" placeholder="name@email.com" />
-                <button>获取更新</button>
+                <button>{{ $t("home.banner-button") }}</button>
             </div>
             <CusCircle class="circle1"></CusCircle>
             <CusCircle class="circle2"></CusCircle>
@@ -99,7 +96,8 @@
             background: #ffca50;
             border-radius: 27px;
             height: 53px;
-            width: 139px;
+            padding-left: 25px;
+            padding-right: 25px;
             font-size: 20px;
             font-weight: 600;
             text-align: center;

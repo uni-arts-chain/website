@@ -1,75 +1,80 @@
 <template>
     <div class="route">
         <div class="container">
-            <h2>路线图</h2>
+            <h2>{{ $t("home.route-title") }}</h2>
             <div class="route-item">
                 <div class="item flag1">
                     <h3>
-                        <img src="@/assets/images/flag@2x.png" alt="" />里程碑I
+                        <img src="@/assets/images/flag@2x.png" alt="" />{{
+                            $t("home.route-item1-title")
+                        }}
                     </h3>
-                    <h4>预计2020年Q4</h4>
+                    <h4>{{ $t("home.route-item1-date") }}</h4>
                     <div class="totem">
                         <img src="@/assets/images/totem1@2x.png" alt="" />
                     </div>
                     <ul>
-                        <li>云画链区块链Alpha版开发完成</li>
-                        <li>云画链区块链浏览器Alpha版开发完成</li>
-                        <li>云画链应用App Alpha版开发完成</li>
-                        <li>实现交易产品的NFT数字化管理</li>
+                        <li>{{ $t("home.route-item1-li1") }}</li>
+                        <li>{{ $t("home.route-item1-li2") }}</li>
+                        <li>{{ $t("home.route-item1-li3") }}</li>
+                        <li>{{ $t("home.route-item1-li4") }}</li>
                     </ul>
                 </div>
                 <div class="item flag2">
                     <h3>
-                        <img src="@/assets/images/flag@2x.png" alt="" />里程碑II
+                        <img src="@/assets/images/flag@2x.png" alt="" />{{
+                            $t("home.route-item2-title")
+                        }}
                     </h3>
-                    <h4>预计2021年Q1</h4>
+                    <h4>{{ $t("home.route-item2-date") }}</h4>
                     <div class="totem">
                         <img src="@/assets/images/totem2@2x.png" alt="" />
                     </div>
                     <ul>
-                        <li>云画链区块链Beta版开发完成</li>
-                        <li>云画链区块链浏览器Beta版开发完成</li>
-                        <li>云画链测试网络(伏羲版)上线</li>
-                        <li>云画链应用App Beta版开发完成</li>
-                        <li>实现艺术品交易全过程数据的上链</li>
-                        <li>技术与社区开始进行对接波卡生态准备</li>
+                        <li>{{ $t("home.route-item2-li1") }}</li>
+                        <li>{{ $t("home.route-item2-li2") }}</li>
+                        <li>{{ $t("home.route-item2-li3") }}</li>
+                        <li>{{ $t("home.route-item2-li4") }}</li>
+                        <li>{{ $t("home.route-item2-li5") }}</li>
+                        <li>{{ $t("home.route-item2-li6") }}</li>
                     </ul>
                 </div>
                 <div class="item flag3">
                     <h3>
-                        <img
-                            src="@/assets/images/flag@2x.png"
-                            alt=""
-                        />里程碑III
+                        <img src="@/assets/images/flag@2x.png" alt="" />{{
+                            $t("home.route-item3-title")
+                        }}
                     </h3>
-                    <h4>预计2021年Q3</h4>
+                    <h4>{{ $t("home.route-item3-date") }}</h4>
                     <div class="totem">
                         <img src="@/assets/images/totem3@2x.png" alt="" />
                     </div>
                     <ul>
-                        <li>云画链区块链Stable版开发完成</li>
-                        <li>云画链区块链浏览器Stable版开发完成</li>
-                        <li>接入波卡生态，成为波卡平行链的一员</li>
-                        <li>云画链正式网络(女娲版)上线</li>
-                        <li>云画链应用App Stable版开发完成</li>
-                        <li>云画链进行去中心社区化管理</li>
+                        <li>{{ $t("home.route-item3-li1") }}</li>
+                        <li>{{ $t("home.route-item3-li2") }}</li>
+                        <li>{{ $t("home.route-item3-li3") }}</li>
+                        <li>{{ $t("home.route-item3-li4") }}</li>
+                        <li>{{ $t("home.route-item3-li5") }}</li>
+                        <li>{{ $t("home.route-item3-li6") }}</li>
                     </ul>
                 </div>
                 <div class="item flag4">
                     <h3>
-                        <img src="@/assets/images/flag@2x.png" alt="" />里程碑IV
+                        <img src="@/assets/images/flag@2x.png" alt="" />{{
+                            $t("home.route-item4-title")
+                        }}
                     </h3>
-                    <h4>预计2022年Q4</h4>
+                    <h4>{{ $t("home.route-item4-date") }}</h4>
                     <div class="totem">
                         <img src="@/assets/images/totem4@2x.png" alt="" />
                     </div>
                     <ul>
-                        <li>大数据智能匹配系统上线</li>
-                        <li>基金会艺术孵化与投资项目启动</li>
-                        <li>云画链正式网络(后羿版)上线</li>
-                        <li>大型艺术机构与拍卖机构接入</li>
-                        <li>云画链应用App全部功能上线</li>
-                        <li>更多艺术品与非遗产品上线</li>
+                        <li>{{ $t("home.route-item4-li1") }}</li>
+                        <li>{{ $t("home.route-item4-li2") }}</li>
+                        <li>{{ $t("home.route-item4-li3") }}</li>
+                        <li>{{ $t("home.route-item4-li4") }}</li>
+                        <li>{{ $t("home.route-item4-li5") }}</li>
+                        <li>{{ $t("home.route-item4-li6") }}</li>
                     </ul>
                 </div>
             </div>

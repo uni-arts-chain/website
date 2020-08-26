@@ -2,24 +2,29 @@
     <nav>
         <div class="container">
             <img class="left" src="@/assets/images/logo@2x.png" alt="" />
-            <div class="right">
+            <div class="right" :class="{ en: $store.state.language == 'en' }">
                 <ul>
-                    <li class="active">首页</li>
+                    <li class="active">{{ $t("navbar.home") }}</li>
                     <li>
                         <a
                             target="_blank"
                             href="https://github.com/uni-arts-chain/UniArts-white-paper/blob/master/uniarts-white-paper.pdf"
-                            >白皮书</a
+                            >{{ $t("navbar.white-page") }}</a
                         >
                     </li>
-                    <li><a>测试网络</a></li>
                     <li>
-                        <a target="_blank" href="https://polkadot.subscan.io"
-                            >浏览器</a
-                        >
+                        <a>{{ $t("navbar.testnet") }}</a>
                     </li>
-                    <li>公告</li>
-                    <li class="other">
+                    <li>
+                        <a target="_blank" href="https://polkadot.subscan.io">{{
+                            $t("navbar.explorer")
+                        }}</a>
+                    </li>
+                    <li>{{ $t("navbar.articles") }}</li>
+                    <li
+                        class="other"
+                        style="margin-left: 20; margin-right: 20px;"
+                    >
                         <a class="wallet"></a>
                         <a
                             class="github"
@@ -27,7 +32,11 @@
                             href="https://github.com/uni-arts-chain"
                         ></a>
                         <div
-                            :class="{ 'lang en': lang, 'lang zh-cn': !lang }"
+                            @click="changeLanguage"
+                            :class="{
+                                'lang en': lang == 'en',
+                                'lang zh-cn': lang == 'zh',
+                            }"
                         ></div>
                     </li>
                 </ul>
@@ -39,9 +48,19 @@
 <script>
     export default {
         data() {
-            return {
-                lang: "",
-            }
+            return {}
+        },
+        computed: {
+            lang() {
+                return this.$store.state.language
+            },
+        },
+        methods: {
+            changeLanguage() {
+                let curLang = this.lang == "en" ? "zh" : "en"
+                this.$store.dispatch("UpdateLanguage", curLang)
+                this.$i18n.locale = curLang
+            },
         },
     }
 </script>
@@ -64,7 +83,13 @@
     img.left {
         height: 75px;
     }
-
+    .right.en {
+        li {
+            margin-left: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
     .right {
         ul {
             display: flex;
@@ -88,6 +113,7 @@
         li a {
             color: inherit;
             text-decoration: none;
+            white-space: nowrap;
         }
         li.active {
             background: #51c2ff;

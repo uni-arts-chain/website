@@ -1,7 +1,7 @@
 <template>
     <div class="partner">
         <div class="container">
-            <h2>合作机构</h2>
+            <h2>{{ $t("home.partner-title") }}</h2>
             <div class="partner-item">
                 <div class="item">
                     <div class="logo-box">

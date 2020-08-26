@@ -1,7 +1,7 @@
 <template>
     <div class="structure">
         <div class="container">
-            <h2>架构设计</h2>
+            <h2>{{ $t("home.structure-title") }}</h2>
             <div class="item-body">
                 <img src="@/assets/images/structure@2x.png" alt="" />
             </div>

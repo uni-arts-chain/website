@@ -1,7 +1,7 @@
 <template>
     <div class="components">
         <div class="container">
-            <h2>核心要素</h2>
+            <h2>{{ $t("home.components-title") }}</h2>
             <div class="item-body">
                 <div class="top">
                     <div class="item">
@@ -12,8 +12,8 @@
                                 alt=""
                             />
                         </div>
-                        <h4>桥接链</h4>
-                        <p>云画链网络核心技术，跨链互操作解决方案</p>
+                        <h4>{{ $t("home.components-item1") }}</h4>
+                        <p>{{ $t("home.components-item1-desc") }}</p>
                     </div>
                     <div class="item">
                         <div class="img-box">
@@ -23,8 +23,8 @@
                                 alt=""
                             />
                         </div>
-                        <h4>波卡生态</h4>
-                        <p>波卡生态的平行链，专注于跨链代币交易方向的研究</p>
+                        <h4>{{ $t("home.components-item2") }}</h4>
+                        <p>{{ $t("home.components-item2-desc") }}</p>
                     </div>
                     <div class="item">
                         <div class="img-box">
@@ -34,9 +34,9 @@
                                 alt=""
                             />
                         </div>
-                        <h4>去中心化</h4>
+                        <h4>{{ $t("home.components-item3") }}</h4>
                         <p>
-                            安全高效的背书体系，为云画链网络跨链提供去中心化技术支持
+                            {{ $t("home.components-item3-desc") }}
                         </p>
                     </div>
                 </div>
@@ -49,9 +49,9 @@
                                 alt=""
                             />
                         </div>
-                        <h4>去中心化代币兑换</h4>
+                        <h4>{{ $t("home.components-item4") }}</h4>
                         <p>
-                            应用云画链去中心化跨链交易协议，实现资产跨链快速兑换
+                            {{ $t("home.components-item4-desc") }}
                         </p>
                     </div>
                     <div class="item">
@@ -62,9 +62,9 @@
                                 alt=""
                             />
                         </div>
-                        <h4>非标资产拍卖市场</h4>
+                        <h4>{{ $t("home.components-item5") }}</h4>
                         <p>
-                            去中心化非标资产交易中心，支持跨链交易，支持拍卖等多种交易方式
+                            {{ $t("home.components-item5-desc") }}
                         </p>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
     .bottom {
         margin-bottom: 60px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
         .item {
             .img-box {

@@ -10,14 +10,14 @@ import "normalize.css"
 // 引入插件
 import router from "@/plugins/router"
 
+import store from "@/plugins/store"
+
 // 引入国际化文件
 import enLocale from "@/locale/en.json"
 import zhLocale from "@/locale/zh-CN.json"
 
 // 引入根组件
 import App from "@/views/App"
-
-import { getLocalStore } from "@/utils/storage"
 
 // 可作为全局通信的载体,用于非父子关系的组件间的通信上，常见的业务一般都可以用vuex替代
 window.GLOBAL.vbus = new Vue()
@@ -28,19 +28,10 @@ Vue.use(VueI18n)
 // 设置为 false 以阻止 vue 在启动时生成生产提示
 Vue.config.productionTip = false
 
-let language =
-    getLocalStore("local_language") ||
-    (navigator.browserLanguage ? navigator.browserLanguage : navigator.language)
+import { getLocale } from "@/utils/tools"
 
-if (language === "en-US") {
-    language = "en"
-} else if (language === "zh-CN" || language === "zh-cn") {
-    language = "zh"
-} else if (language !== "en" && language !== "zh") {
-    language = "en"
-}
 const i18n = new VueI18n({
-    locale: language, // 设置默认使用语言
+    locale: getLocale(), // 设置默认使用语言
     messages: {
         en: Object.assign(enLocale, {}),
         zh: Object.assign(zhLocale, {}),
@@ -49,6 +40,7 @@ const i18n = new VueI18n({
 
 new Vue({
     router,
-    i18n: i18n,
+    i18n,
+    store,
     render: (h) => h(App),
 }).$mount("#app")

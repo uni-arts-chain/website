@@ -26,35 +26,35 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <span>摘要</span>
+                    <span>{{ $t("footer.summary") }}</span>
                     <ul>
-                        <li>公告</li>
-                        <li>联系我们</li>
+                        <li>{{ $t("navbar.articles") }}</li>
+                        <li>{{ $t("footer.contact-us") }}</li>
                     </ul>
                 </div>
                 <div class="col">
-                    <span>技术</span>
+                    <span>{{ $t("footer.technology") }}</span>
                     <ul>
-                        <li>测试网络</li>
-                        <li>Telemetry</li>
+                        <li>{{ $t("navbar.testnet") }}</li>
+                        <li>{{ $t("footer.telemetry") }}</li>
                         <li>
                             <a
                                 target="_blank"
                                 href="https://github.com/uni-arts-chain/UniArts-white-paper/blob/master/uniarts-white-paper.pdf"
-                                >Whitepaper</a
+                                >{{ $t("navbar.white-page") }}</a
                             >
                         </li>
                     </ul>
                 </div>
                 <div class="col">
-                    <span>产品</span>
+                    <span>{{ $t("footer.product") }}</span>
                     <ul>
-                        <li>云画链</li>
+                        <li>{{ $t("footer.uni-arts-chain") }}</li>
                         <li>
                             <a
                                 target="_blank"
                                 href="https://polkadot.subscan.io"
-                                >浏览器</a
+                                >{{ $t("navbar.explorer") }}</a
                             >
                         </li>
                     </ul>
