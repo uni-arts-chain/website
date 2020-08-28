@@ -3,10 +3,20 @@
         <div class="container">
             <h2>{{ $t("home.structure-title") }}</h2>
             <div class="item-body">
-                <img src="@/assets/images/structure@2x.png" alt="" />
+                <img
+                    v-if="locale == 'zh'"
+                    src="@/assets/images/structure@2x.png"
+                    alt=""
+                />
+                <img v-else src="@/assets/images/structure2@2x.png" alt="" />
             </div>
             <div class="item-body bottom">
-                <img src="@/assets/images/pi@2x.png" alt="" />
+                <img
+                    v-if="locale == 'zh'"
+                    src="@/assets/images/pi@2x.png"
+                    alt=""
+                />
+                <img v-else src="@/assets/images/pi2@2x.png" alt="" />
             </div>
         </div>
         <CusCircle class="circle1" r="90" bg="#ffca50"></CusCircle>
@@ -24,6 +34,11 @@
         name: "structure",
         components: {
             CusCircle,
+        },
+        computed: {
+            locale() {
+                return this.$store.state.language
+            },
         },
     }
 </script>

@@ -3,7 +3,17 @@
         <div class="container">
             <div class="top">
                 <div class="bottom-logo">
-                    <img src="@/assets/images/bottom-logo@2x.png" alt="" />
+                    <img
+                        v-if="$store.state.language == 'en'"
+                        src="@/assets/images/bottom-logo2@2x.png"
+                        :class="{ en: $store.state.language == 'en' }"
+                        alt=""
+                    />
+                    <img
+                        v-else
+                        src="@/assets/images/bottom-logo@2x.png"
+                        alt=""
+                    />
                     <ul>
                         <li>
                             <a></a>
@@ -128,6 +138,10 @@
             text-decoration: none;
         }
 
+        .bottom-logo > img.en {
+            width: 180px;
+            height: 32px;
+        }
         .bottom-logo {
             width: 31%;
             ul {

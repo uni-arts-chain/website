@@ -1,7 +1,13 @@
 <template>
     <nav>
         <div class="container">
-            <img class="left" src="@/assets/images/logo@2x.png" alt="" />
+            <img
+                class="left"
+                v-if="$store.state.language == 'en'"
+                src="@/assets/images/logo2@2x.png"
+                alt=""
+            />
+            <img class="left" v-else src="@/assets/images/logo@2x.png" alt="" />
             <div class="right" :class="{ en: $store.state.language == 'en' }">
                 <ul>
                     <li class="active">{{ $t("navbar.home") }}</li>
@@ -23,7 +29,7 @@
                     <li>{{ $t("navbar.articles") }}</li>
                     <li
                         class="other"
-                        style="margin-left: 20; margin-right: 20px;"
+                        style="margin-left: 20; margin-right: 0px;"
                     >
                         <a class="wallet"></a>
                         <a
@@ -85,8 +91,8 @@
     }
     .right.en {
         li {
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
             cursor: pointer;
         }
     }
