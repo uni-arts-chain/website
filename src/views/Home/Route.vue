@@ -79,10 +79,10 @@
                 </div>
             </div>
         </div>
-        <CusCircle class="circle1"></CusCircle>
-        <CusCircle class="circle2"></CusCircle>
-        <CusCircle class="circle3"></CusCircle>
-        <CusCircle class="circle4"></CusCircle>
+        <CusCircle class="circle1" r="14" bg="#ffca50"></CusCircle>
+        <CusCircle class="circle2" r="29.5" bg="#ffca50"></CusCircle>
+        <CusCircle class="circle3" r="67" bg="#ffca50"></CusCircle>
+        <CusCircle class="circle4" r="83.5" bg="#50c3ff"></CusCircle>
     </div>
 </template>
 
@@ -241,29 +241,17 @@
     .circle1 {
         left: 12%;
         top: 15%;
-        width: 28px;
-        height: 28px;
-        background-color: #ffca50;
     }
     .circle2 {
         right: 14%;
         top: 12%;
-        width: 59px;
-        height: 59px;
-        background-color: #ffca50;
     }
     .circle3 {
         top: 40%;
         left: -67px;
-        width: 134px;
-        height: 134px;
-        background-color: #ffca50;
     }
     .circle4 {
         right: -73px;
         bottom: 26%;
-        width: 167px;
-        height: 167px;
-        background-color: #50c3ff;
     }
 </style>

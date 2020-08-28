@@ -8,11 +8,11 @@
                 <input type="text" placeholder="name@email.com" />
                 <button>{{ $t("home.banner-button") }}</button>
             </div>
-            <CusCircle class="circle1"></CusCircle>
-            <CusCircle class="circle2"></CusCircle>
+            <CusCircle class="circle1" r="108" bg="#50c3ff"></CusCircle>
+            <CusCircle class="circle2" r="42" bg="#ffca50"></CusCircle>
         </div>
-        <CusCircle class="circle3"></CusCircle>
-        <CusCircle class="circle4"></CusCircle>
+        <CusCircle class="circle3" r="19.5" bg="#50c3ff"></CusCircle>
+        <CusCircle class="circle4" r="22.5" bg="#ffca50"></CusCircle>
     </div>
 </template>
 
@@ -113,29 +113,17 @@
     .circle1 {
         right: 8%;
         top: 0;
-        width: 216px;
-        height: 216px;
-        background-color: #50c3ff;
     }
     .circle2 {
         bottom: 0;
         right: 30%;
-        width: 84px;
-        height: 84px;
-        background-color: #ffca50;
     }
     .circle3 {
         bottom: 20%;
         right: 5%;
-        width: 39px;
-        height: 39px;
-        background-color: #50c3ff;
     }
     .circle4 {
         bottom: 15%;
         left: 5%;
-        width: 45px;
-        height: 45px;
-        background-color: #ffca50;
     }
 </style>

@@ -42,9 +42,9 @@
                 </div>
             </div>
         </div>
-        <CusCircle class="circle1"></CusCircle>
-        <CusCircle class="circle2"></CusCircle>
-        <CusCircle class="circle3"></CusCircle>
+        <CusCircle class="circle1" r="24.5" bg="#ffca50"></CusCircle>
+        <CusCircle class="circle2" r="34.5" bg="#50c3ff"></CusCircle>
+        <CusCircle class="circle3" r="50" bg="#ffca50"></CusCircle>
     </div>
 </template>
 
@@ -101,22 +101,13 @@
     .circle1 {
         right: 5%;
         top: 140px;
-        width: 49px;
-        height: 49px;
-        background-color: #ffca50;
     }
     .circle2 {
         left: 5%;
         top: 240px;
-        width: 69px;
-        height: 69px;
-        background-color: #50c3ff;
     }
     .circle3 {
         right: -40px;
         bottom: 10%;
-        width: 100px;
-        height: 100px;
-        background-color: #ffca50;
     }
 </style>

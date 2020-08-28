@@ -9,12 +9,12 @@
                 <img src="@/assets/images/pi@2x.png" alt="" />
             </div>
         </div>
-        <CusCircle class="circle1"></CusCircle>
-        <CusCircle class="circle2"></CusCircle>
-        <CusCircle class="circle3"></CusCircle>
-        <CusCircle class="circle4"></CusCircle>
-        <CusCircle class="circle5"></CusCircle>
-        <CusCircle class="circle6"></CusCircle>
+        <CusCircle class="circle1" r="90" bg="#ffca50"></CusCircle>
+        <CusCircle class="circle2" r="15" bg="#50c3ff"></CusCircle>
+        <CusCircle class="circle3" r="41" bg="#50c3ff"></CusCircle>
+        <CusCircle class="circle4" r="42" bg="#ffca50"></CusCircle>
+        <CusCircle class="circle5" r="44" bg="#50c3ff"></CusCircle>
+        <CusCircle class="circle6" r="15" bg="#ffca50"></CusCircle>
     </div>
 </template>
 
@@ -59,43 +59,25 @@
     .circle1 {
         right: -110px;
         top: 20px;
-        width: 180px;
-        height: 180px;
-        background-color: #ffca50;
     }
     .circle2 {
         right: 8%;
         top: 40%;
-        width: 30px;
-        height: 30px;
-        background-color: #50c3ff;
     }
     .circle3 {
         right: 15%;
         bottom: 30%;
-        width: 82px;
-        height: 82px;
-        background-color: #50c3ff;
     }
     .circle4 {
         left: 2%;
         top: 37%;
-        width: 84px;
-        height: 84px;
-        background-color: #ffca50;
     }
     .circle5 {
         left: 10%;
         bottom: 202px;
-        width: 88px;
-        height: 88px;
-        background-color: #50c3ff;
     }
     .circle6 {
         right: 2%;
         bottom: 0%;
-        width: 30px;
-        height: 30px;
-        background-color: #ffca50;
     }
 </style>

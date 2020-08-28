@@ -70,8 +70,8 @@
                 </div>
             </div>
         </div>
-        <CusCircle class="circle1"></CusCircle>
-        <CusCircle class="circle2"></CusCircle>
+        <CusCircle class="circle1" r="108" bg="#50c3ff"></CusCircle>
+        <CusCircle class="circle2" r="22.5" bg="#ffca50"></CusCircle>
     </div>
 </template>
 
@@ -142,15 +142,9 @@
     .circle1 {
         left: -108px;
         bottom: -10px;
-        width: 216px;
-        height: 216px;
-        background-color: #50c3ff;
     }
     .circle2 {
         right: 147px;
         bottom: 40%;
-        width: 45px;
-        height: 45px;
-        background-color: #ffca50;
     }
 </style>
