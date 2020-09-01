@@ -19,7 +19,7 @@
                             <a></a>
                         </li>
                         <li>
-                            <a></a>
+                            <a href="https://t.me/uniarts" target="_blank"></a>
                         </li>
                         <li>
                             <a></a>
