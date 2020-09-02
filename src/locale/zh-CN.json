@@ -104,7 +104,7 @@
         "intro2": "Substrate的状态机被编译成WebAssembly（Wasm），一个性能卓越的虚拟环境。Wasm是由包括Google、Apple、Microsoft和Mozilla在内的大公司开发的，它们已经为这个标准创建了一个庞大的生态系统。",
         "intro3": "云画链网络使用libp2p，一个灵活的跨平台的对等应用网络框架。libp2p被定位为未来去中心化应用的标准，它处理整个区块链生态系统中的对等发现和通信。",
         "appTitle": "应用APP",
-        "appDesc": "创作者张大中在作品《水墨》系列中以”梅花”作为自己某种观念或隐喻的象征",
+        "appDesc": "艺术品资产NFT发行、交易、拍卖、验证",
         "dappTitle": "Dapp 交易平台"
     },
     "footer": {

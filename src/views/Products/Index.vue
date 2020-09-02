@@ -10,25 +10,38 @@
             :initial-index="currentIndex"
         >
             <el-carousel-item class="item1">
-                <img class="left" src="@/assets/images/pic1@2x.png" alt="" />
-                <img
-                    class="right"
-                    src="@/assets/images/product1.1@2x.png"
-                    alt=""
-                />
-                <div class="intro">
-                    <div
-                        class="line"
-                        style="width: 88px; height: 8px; background: #ff007b;"
-                    ></div>
-                    <h1 style="padding-top: 51px;">
-                        {{ $t("product.title") }}
-                    </h1>
-                    <p style="padding-top: 47px;">{{ $t("product.desc") }}</p>
-                    <div style="padding-top: 49px;" class="desc">
-                        {{ $t("product.intro1") }}<br />
-                        {{ $t("product.intro2") }}<br />
-                        {{ $t("product.intro3") }}<br />
+                <div style="width: 100%; height: 100%;">
+                    <div class="container">
+                        <div class="left-container">
+                            <img
+                                class="left"
+                                src="@/assets/images/pic1@2x.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="right-container">
+                            <div class="intro">
+                                <div
+                                    class="line"
+                                    style="
+                                        width: 88px;
+                                        height: 8px;
+                                        background: #ff007b;
+                                    "
+                                ></div>
+                                <h1 style="padding-top: 30px;">
+                                    {{ $t("product.title") }}
+                                </h1>
+                                <p style="padding-top: 30px;">
+                                    {{ $t("product.desc") }}
+                                </p>
+                                <div style="padding-top: 25px;" class="desc">
+                                    {{ $t("product.intro1") }}<br />
+                                    {{ $t("product.intro2") }}<br />
+                                    {{ $t("product.intro3") }}<br />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </el-carousel-item>
@@ -148,52 +161,71 @@
 
     .item1 {
         background-color: #172026;
-        position: relative;
-        img.left {
-            width: 1300px;
-            position: absolute;
-            left: 9%;
-            top: 220px;
-        }
-        img.right {
-            position: absolute;
-            width: 870px;
-            top: 330px;
-            right: 5%;
-        }
-        .intro {
-            position: absolute;
-            right: 0;
-            top: 304px;
-            color: white;
-            width: 680px;
-            max-width: 714px;
-            right: 9%;
-            h1 {
-                font-size: 48px;
-                font-family: PingFang SC Medium, PingFang SC Medium-Medium;
-                font-weight: 500;
-                text-align: left;
-                color: #ffffff;
-                letter-spacing: 5px;
+        // position: relative;
+        .container {
+            position: relative;
+            height: 100%;
+            .left-container {
+                position: absolute;
+                left: -8%;
+                height: 100%;
+                width: 55%;
+                display: flex;
+                align-items: center;
             }
-            p {
-                font-size: 27px;
-                font-family: PingFang SC Medium, PingFang SC Medium-Medium;
-                font-weight: 500;
-                text-align: left;
-                color: #ffffff;
-                letter-spacing: 0px;
+            .right-container {
+                position: absolute;
+                right: -5%;
+                height: 100%;
+                display: flex;
+                align-items: center;
             }
+            img.left {
+                width: 160%;
+                max-width: 1200px;
+            }
+            .intro {
+                // top: 104px;
 
-            .desc {
-                font-size: 26px;
-                font-family: PingFang SC Regular, PingFang SC Regular-Regular;
-                font-weight: 400;
-                text-align: left;
-                color: #ffffff;
-                line-height: 36px;
-                letter-spacing: 1px;
+                color: white;
+                min-height: 560px;
+                // width: 780px;
+                // position: relative;
+                z-index: 1;
+                max-width: 714px;
+                padding-left: 50px;
+                padding-right: 50px;
+                // right: 9%;
+                background: url(~@/assets/images/product1.1@2x.png) no-repeat;
+                background-size: 100% auto;
+                background-position: -10% auto;
+                h1 {
+                    font-size: 44px;
+                    font-family: PingFang SC Medium, PingFang SC Medium-Medium;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #ffffff;
+                    letter-spacing: 5px;
+                }
+                p {
+                    font-size: 25px;
+                    font-family: PingFang SC Medium, PingFang SC Medium-Medium;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #ffffff;
+                    letter-spacing: 0px;
+                }
+
+                .desc {
+                    font-size: 23px;
+                    font-family: PingFang SC Regular,
+                        PingFang SC Regular-Regular;
+                    font-weight: 400;
+                    text-align: left;
+                    color: #ffffff;
+                    line-height: 36px;
+                    letter-spacing: 1px;
+                }
             }
         }
     }
@@ -205,9 +237,9 @@
             img {
                 position: absolute;
                 width: 60%;
-                top: -5%;
+                top: -15%;
                 z-index: 1;
-                right: 0;
+                right: -1%;
             }
             .bg {
                 background: url(~@/assets/images/tangle@2x.png) no-repeat 100%;
@@ -258,6 +290,28 @@
             font-family: PingFang SC Semibold, PingFang SC Semibold-Semibold;
             font-weight: 600;
             color: #1e1d1e;
+        }
+    }
+
+    @media screen and (max-width: 1920px) {
+        .item1 .container .intro {
+            h1 {
+                font-size: 29px;
+            }
+            p {
+                font-size: 25px;
+            }
+            .desc {
+                font-size: 19px;
+            }
+        }
+        .item2 .item-box img {
+            max-width: 50%;
+        }
+
+        .item2 .item-box .bg .rotateBox {
+            top: 45%;
+            left: 50%;
         }
     }
 </style>
