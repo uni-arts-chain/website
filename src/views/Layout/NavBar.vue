@@ -1,16 +1,38 @@
 <template>
-    <nav>
+    <nav :class="{ products: isProducts }">
         <div class="container">
             <img
                 class="left"
-                v-if="$store.state.language == 'en'"
+                v-if="$store.state.isProducts && $store.state.language == 'en'"
+                src="@/assets/images/bottom-logo2@2x.png"
+                style="height: 55px; margin-top: -10px; margin-left: 5px;"
+            />
+            <img
+                class="left"
+                v-else-if="
+                    $store.state.isProducts && $store.state.language == 'zh'
+                "
+                src="@/assets/images/bottom-logo@2x.png"
+                style="height: 55px; margin-top: -10px; margin-left: 5px;"
+            />
+            <img
+                class="left"
+                v-else-if="$store.state.language == 'en'"
                 src="@/assets/images/logo2@2x.png"
+            />
+            <img
+                class="left"
+                v-else-if="$store.state.language == 'zh'"
+                src="@/assets/images/logo@2x.png"
                 alt=""
             />
-            <img class="left" v-else src="@/assets/images/logo@2x.png" alt="" />
             <div class="right" :class="{ en: $store.state.language == 'en' }">
                 <ul>
-                    <li class="active">{{ $t("navbar.home") }}</li>
+                    <li :class="{ active: $route.path == '/' }">
+                        <router-link to="/">{{
+                            $t("navbar.home")
+                        }}</router-link>
+                    </li>
                     <li>
                         <a
                             target="_blank"
@@ -26,7 +48,14 @@
                             $t("navbar.explorer")
                         }}</a>
                     </li>
-                    <li>{{ $t("navbar.articles") }}</li>
+                    <li :class="{ active: $route.path == '/products' }">
+                        <router-link to="/products">{{
+                            $t("navbar.products")
+                        }}</router-link>
+                    </li>
+                    <li>
+                        <a>{{ $t("navbar.articles") }}</a>
+                    </li>
                     <li
                         class="other"
                         style="margin-left: 20; margin-right: 0px;"
@@ -57,6 +86,9 @@
             return {}
         },
         computed: {
+            isProducts() {
+                return this.$store.state.isProducts
+            },
             lang() {
                 return this.$store.state.language
             },
@@ -77,6 +109,22 @@
         flex: 0 0 auto;
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+
+    nav.products {
+        background-color: #172026;
+        .right li {
+            color: white;
+        }
+        .right li.active {
+            color: #1785ac;
+            background-color: #fff;
+        }
+        .github {
+            background-image: url(~@/assets/images/github2@2x.png);
+            background-size: 25px;
+            background-repeat: no-repeat;
+        }
     }
 
     .container {

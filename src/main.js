@@ -7,10 +7,14 @@ import VueI18n from "vue-i18n"
 // 引入样式reset
 import "normalize.css"
 
+import "@/plugins/element.js"
+
 // 引入插件
 import router from "@/plugins/router"
 
 import store from "@/plugins/store"
+
+// import VueFullpage from 'vue-fullpage.js'
 
 // 引入国际化文件
 import enLocale from "@/locale/en.json"
@@ -21,6 +25,8 @@ import App from "@/views/App"
 
 // 可作为全局通信的载体,用于非父子关系的组件间的通信上，常见的业务一般都可以用vuex替代
 window.GLOBAL.vbus = new Vue()
+
+// Vue.use(VueFullpage)
 
 // 引入国际化
 Vue.use(VueI18n)

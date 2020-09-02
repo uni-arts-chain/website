@@ -5,6 +5,12 @@ const routes = [
         component: () =>
             import(/* webpackChunkName: "home" */ "@/views/Home/Index"),
     },
+    {
+        name: "",
+        path: "/products",
+        component: () =>
+            import(/* webpackChunkName: "products" */ "@/views/Products/Index"),
+    },
 ]
 
 export default routes

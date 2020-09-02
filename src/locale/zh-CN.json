@@ -4,6 +4,7 @@
         "white-page": "白皮书",
         "testnet": "测试网络",
         "explorer": "浏览器",
+        "products": "产品",
         "articles": "公告"
     },
     "home": {
@@ -95,6 +96,16 @@
         "team-title": "开发团队",
         "team-desc": "捷链团队将支持云画链网络的开发",
         "partner-title": "合作机构"
+    },
+    "product": {
+        "title": "云画链",
+        "desc": "基于Substrate技术搭建艺术品区块链网络",
+        "intro1": "云画链网络使用substrate技术构建，它是基于区块链之上的网络架构，它是结合了以太坊、比特币、以及其他等大型区块链应用特点于一身。",
+        "intro2": "Substrate的状态机被编译成WebAssembly（Wasm），一个性能卓越的虚拟环境。Wasm是由包括Google、Apple、Microsoft和Mozilla在内的大公司开发的，它们已经为这个标准创建了一个庞大的生态系统。",
+        "intro3": "云画链网络使用libp2p，一个灵活的跨平台的对等应用网络框架。libp2p被定位为未来去中心化应用的标准，它处理整个区块链生态系统中的对等发现和通信。",
+        "appTitle": "应用APP",
+        "appDesc": "创作者张大中在作品《水墨》系列中以”梅花”作为自己某种观念或隐喻的象征",
+        "dappTitle": "Dapp 交易平台"
     },
     "footer": {
         "summary": "摘要",
