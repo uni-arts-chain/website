@@ -49,14 +49,17 @@
                 <div class="item-box">
                     <img src="@/assets/images/product2@2x.png" />
                     <div class="bg">
-                        <div class="rotateBox">
+                        <div class="rotateBox" :style="currentRotateStyle">
                             <h1>{{ $t("product.appTitle") }}</h1>
                             <p>{{ $t("product.appDesc") }}</p>
                         </div>
                     </div>
                 </div>
             </el-carousel-item>
-            <el-carousel-item class="item3">
+            <el-carousel-item
+                class="item3"
+                :style="`background: url(${item3Image}) no-repeat;background-size: cover;background-position: center;`"
+            >
                 <h2>{{ $t("product.dappTitle") }}</h2>
             </el-carousel-item>
         </el-carousel>
@@ -64,6 +67,9 @@
 </template>
 <script>
     import throttle from "lodash/throttle"
+    import Image1250 from "@/assets/images/1250item3@2x.png"
+    import Image1920 from "@/assets/images/1920item3@2x.png"
+    import Image2600 from "@/assets/images/2600item3@2x.png"
     export default {
         name: "index",
         data() {
@@ -72,6 +78,13 @@
                 prev: {},
                 currentIndex: 0,
                 tangle: 0,
+                currentRotateStyle: "",
+                item3Image:
+                    window.innerWidth > 1920
+                        ? Image2600
+                        : window.innerWidth < 1250
+                        ? Image1250
+                        : Image1920,
             }
         },
         created() {
@@ -104,6 +117,7 @@
         },
         mounted() {
             this.setListerner()
+            window.addEventListener("resize", this.resizeListener)
             let width = this.$refs.item2.offsetWidth
             let height = this.$refs.item2.offsetHeight
             this.tangle = width / height
@@ -143,9 +157,27 @@
                 }
                 return false
             },
+            resizeListener() {
+                let height = window.innerHeight
+                let width = window.innerWidth
+                if (height > 1200) {
+                    this.currentRotateStyle = `top:${
+                        40 - ((height - 1200) / 50) * 2
+                    }%;`
+                }
+                console.log(width)
+                if (width > 1250 && width <= 1920) {
+                    this.item3Image = Image1920
+                } else if (width > 1920) {
+                    this.item3Image = Image2600
+                } else {
+                    this.item3Image = Image1250
+                }
+            },
         },
         destroyed() {
             this.$store.dispatch("UpdateIsProducts", false)
+            window.removeEventListener("resize", this.resizeListener)
         },
     }
 </script>
@@ -279,10 +311,6 @@
         }
     }
     .item3 {
-        background: url(~@/assets/images/product3@2x.png) no-repeat;
-        background-size: cover;
-        background-position: center;
-
         h2 {
             padding-top: 60px;
             font-size: 68px;
@@ -290,6 +318,58 @@
             font-family: PingFang SC Semibold, PingFang SC Semibold-Semibold;
             font-weight: 600;
             color: #1e1d1e;
+        }
+    }
+
+    @media screen and (max-width: 3000px) {
+        .item2 .item-box img {
+            max-width: 40%;
+            top: -5%;
+        }
+
+        .item2 .item-box .bg .rotateBox {
+            top: 40%;
+            left: 50%;
+        }
+    }
+
+    @media screen and (max-width: 2600px) {
+        .item2 .item-box img {
+            max-width: 48%;
+            top: -5%;
+        }
+
+        .item2 .item-box .bg .rotateBox {
+            top: 40%;
+            left: 49%;
+        }
+    }
+
+    @media screen and (max-width: 2100px) {
+        .item1 .container .left-container {
+            left: -300px;
+        }
+        .item2 .item-box img {
+            max-width: 48%;
+            top: -5%;
+        }
+
+        .item2 .item-box .bg .rotateBox {
+            top: 40%;
+            left: 48%;
+        }
+    }
+
+    @media screen and (min-width: 1920px) {
+        .item1 .container .left-container {
+            left: -300px;
+        }
+        .item1 .container .left-container img.left {
+            width: 1400px;
+            max-width: 1400px;
+        }
+        .item1 .container .right-container {
+            right: -200px;
         }
     }
 
@@ -305,13 +385,17 @@
                 font-size: 19px;
             }
         }
+        .item1 .container .left-container {
+            left: -12%;
+        }
         .item2 .item-box img {
-            max-width: 50%;
+            max-width: 60%;
+            top: 0;
         }
 
         .item2 .item-box .bg .rotateBox {
-            top: 45%;
-            left: 50%;
+            top: 40%;
+            left: 40%;
         }
     }
 </style>
