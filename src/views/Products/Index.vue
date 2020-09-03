@@ -29,13 +29,13 @@
                                         background: #ff007b;
                                     "
                                 ></div>
-                                <h1 style="padding-top: 30px;">
+                                <h1>
                                     {{ $t("product.title") }}
                                 </h1>
-                                <p style="padding-top: 30px;">
+                                <p>
                                     {{ $t("product.desc") }}
                                 </p>
-                                <div style="padding-top: 25px;" class="desc">
+                                <div class="desc">
                                     {{ $t("product.intro1") }}<br />
                                     {{ $t("product.intro2") }}<br />
                                     {{ $t("product.intro3") }}<br />
@@ -114,6 +114,13 @@
                 1000,
                 { leading: true, trailing: false }
             )
+
+            let height = window.innerHeight
+            if (height > 1200) {
+                this.currentRotateStyle = `top:${
+                    40 - ((height - 1200) / 50) * 2
+                }%;`
+            }
         },
         mounted() {
             this.setListerner()
@@ -280,8 +287,8 @@
                 position: relative;
                 .rotateBox {
                     position: absolute;
-                    top: 36%;
-                    left: 36%;
+                    // top: 36%;
+                    // left: 36%;
                     transform: translateX(-300px) translateY(0px) rotateZ(56deg);
                     h1 {
                         border-right: 15px solid #ffca50;
@@ -321,7 +328,10 @@
         }
     }
 
-    @media screen and (max-width: 3000px) {
+    @media screen and (min-width: 3000px) {
+    }
+
+    @media screen and (min-width: 2600px) {
         .item2 .item-box img {
             max-width: 40%;
             top: -5%;
@@ -331,21 +341,29 @@
             top: 40%;
             left: 50%;
         }
+        .item1 .container .intro {
+            width: 850px;
+            max-width: 850px;
+            min-height: 680px;
+            h1 {
+                font-size: 40px;
+                padding-top: 45px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 35px;
+                padding-top: 40px;
+                line-height: 35px;
+            }
+            .desc {
+                font-size: 30px;
+                padding-top: 45px;
+                line-height: 45px;
+            }
+        }
     }
 
-    @media screen and (max-width: 2600px) {
-        .item2 .item-box img {
-            max-width: 48%;
-            top: -5%;
-        }
-
-        .item2 .item-box .bg .rotateBox {
-            top: 40%;
-            left: 49%;
-        }
-    }
-
-    @media screen and (max-width: 2100px) {
+    @media screen and (min-width: 2100px) {
         .item1 .container .left-container {
             left: -300px;
         }
@@ -361,6 +379,35 @@
     }
 
     @media screen and (min-width: 1920px) {
+        .item2 .item-box img {
+            max-width: 48%;
+            top: -5%;
+        }
+
+        .item1 .container .intro {
+            max-width: 800px;
+            h1 {
+                font-size: 37px;
+                padding-top: 50px;
+                line-height: 37px;
+            }
+            p {
+                font-size: 30px;
+                padding-top: 40px;
+                line-height: 30px;
+            }
+            .desc {
+                font-size: 26px;
+                padding-top: 45px;
+                line-height: 50px;
+            }
+        }
+
+        .item2 .item-box .bg .rotateBox {
+            top: 40%;
+            left: 49%;
+        }
+
         .item1 .container .left-container {
             left: -300px;
         }
@@ -377,12 +424,18 @@
         .item1 .container .intro {
             h1 {
                 font-size: 29px;
+                padding-top: 30px;
+                line-height: 29px;
             }
             p {
                 font-size: 25px;
+                padding-top: 30px;
+                line-height: 25px;
             }
             .desc {
-                font-size: 19px;
+                font-size: 20px;
+                padding-top: 25px;
+                line-height: 36px;
             }
         }
         .item1 .container .left-container {
