@@ -13,4 +13,5 @@ RUN yarn build
 
 FROM nginx:1.18.0
 COPY --from=web_assets /app/web_assets /usr/share/nginx/html
+COPY default.conf /etc/nginx/conf.d/default.conf
 CMD ["nginx", "-g", "daemon off;"]
