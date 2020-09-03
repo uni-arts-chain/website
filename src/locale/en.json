@@ -103,7 +103,7 @@
         "intro1": "Uni-Arts Chain is built with Substrate, a blockchain-building framework that is the distillation of Parity Technologies’ learnings building Ethereum, Bitcoin, and enterprise blockchains.",
         "intro2": "Uni-Arts Chain state machine is compiled to WebAssembly (Wasm), a super performant virtual environment. Wasm is developed by major companies, including Google, Apple, Microsoft, and Mozilla, that have created a large ecosystem of support for the standard.",
         "intro3": "Uni-Arts Chain networking uses libp2p, a flexible cross-platform network framework for peer-to-peer applications. Positioned to be the standard for future decentralized applications, libp2p handles the peer discovery and communication in the Chain ecosystem.",
-        "appTitle": "Mobile Application",
+        "appTitle": "Application",
         "appDesc": "NFT issue, transaction, auction and verification of art assets",
         "dappTitle": "Dapp Trading Platform"
     },

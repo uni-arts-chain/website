@@ -189,7 +189,7 @@
                 }
             },
             setItem2LabelPosition() {
-                this.currentRotateStyle = `transform: rotateZ(${this.computeAngles()}deg) translateX(-110%) translateY(300%)`
+                this.currentRotateStyle = `transform: rotateZ(${this.computeAngles()}deg) translateX(-92%) translateY(300%)`
             },
             disableWheel(e) {
                 if (e.preventDefault) {
@@ -475,7 +475,7 @@
     }
     @media screen and (max-width: 1920px) and (max-height: 1000px) {
         .item2 .item-box .left-img {
-            max-width: 900px;
+            max-width: 870px;
             top: 10%;
             right: 1%;
         }
