@@ -58,7 +58,7 @@
             </el-carousel-item>
             <el-carousel-item
                 class="item3"
-                :style="`background: url(${item3Image}) no-repeat;background-size: cover;background-position: center;`"
+                :style="`background: url(${item3Image}) no-repeat;background-size: ${item3Cover};background-position: ${item3Position}`"
             >
                 <h2>{{ $t("product.dappTitle") }}</h2>
             </el-carousel-item>
@@ -83,8 +83,10 @@
                     window.innerWidth > 1920
                         ? Image2600
                         : window.innerWidth < 1250
-                        ? Image1250
-                        : Image1920,
+                        ? Image1920
+                        : Image1250,
+                item3Cover: "cover",
+                item3Position: "center",
             }
         },
         created() {
@@ -115,12 +117,8 @@
                 { leading: true, trailing: false }
             )
 
-            let height = window.innerHeight
-            if (height > 1200) {
-                this.currentRotateStyle = `top:${
-                    40 - ((height - 1200) / 50) * 2
-                }%;`
-            }
+            this.setItem2LabelPosition()
+            this.setItem3Image()
         },
         mounted() {
             this.setListerner()
@@ -153,6 +151,41 @@
                     }
                 })
             },
+            setItem3Image() {
+                let height = window.innerHeight
+                let width = window.innerWidth
+                if (height > 900 && width > 1920) {
+                    this.item3Cover = "cover"
+                } else if (height > 900 && width < 1920) {
+                    this.item3Cover = "cover"
+                } else if (height < 900 && width > 1920) {
+                    this.item3Cover = "100% auto"
+                } else {
+                    this.item3Cover = "top"
+                }
+
+                if (width > 1250 && width <= 1920) {
+                    if (height > 900) {
+                        this.item3Image = Image1920
+                        this.item3Position = "top"
+                    } else if (height <= 900) {
+                        this.item3Image = Image1920
+                        this.item3Position = "top"
+                    }
+                } else if (width > 1920) {
+                    this.item3Image = Image2600
+                } else {
+                    this.item3Image = Image1920
+                }
+            },
+            setItem2LabelPosition() {
+                let height = window.innerHeight
+                if (height > 1200) {
+                    this.currentRotateStyle = `top:${
+                        40 - ((height - 1200) / 50) * 2
+                    }%;`
+                }
+            },
             disableWheel(e) {
                 if (e.preventDefault) {
                     // Firefox
@@ -165,21 +198,8 @@
                 return false
             },
             resizeListener() {
-                let height = window.innerHeight
-                let width = window.innerWidth
-                if (height > 1200) {
-                    this.currentRotateStyle = `top:${
-                        40 - ((height - 1200) / 50) * 2
-                    }%;`
-                }
-                console.log(width)
-                if (width > 1250 && width <= 1920) {
-                    this.item3Image = Image1920
-                } else if (width > 1920) {
-                    this.item3Image = Image2600
-                } else {
-                    this.item3Image = Image1250
-                }
+                this.setItem2LabelPosition()
+                this.setItem3Image()
             },
         },
         destroyed() {
@@ -305,7 +325,7 @@
                     p {
                         padding-top: 20px;
                         font-size: 17px;
-                        max-width: 310px;
+                        max-width: 400px;
                         font-family: PingFang SC Regular,
                             PingFang SC Regular-Regular;
                         text-align: right;
@@ -443,12 +463,19 @@
         }
         .item2 .item-box img {
             max-width: 60%;
-            top: 0;
+            top: -10%;
+            right: -5%;
         }
 
         .item2 .item-box .bg .rotateBox {
             top: 40%;
             left: 40%;
+        }
+        .item3 {
+            h2 {
+                font-size: 50px;
+                // padding-top: 20px;
+            }
         }
     }
 </style>
