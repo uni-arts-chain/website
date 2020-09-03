@@ -117,7 +117,7 @@
             color: white;
         }
         .right li.active {
-            color: #1785ac;
+            color: black;
             background-color: #fff;
         }
         .github {

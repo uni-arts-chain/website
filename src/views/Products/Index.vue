@@ -47,7 +47,18 @@
             </el-carousel-item>
             <el-carousel-item class="item2" ref="item2">
                 <div class="item-box">
-                    <img src="@/assets/images/product2@2x.png" />
+                    <div class="left-img">
+                        <img
+                            src="@/assets/images/product2@2x.png"
+                            :style="`transform: rotateZ(-${computeAngles(
+                                true
+                            )}deg) translateX(20%) translateY(7%)`"
+                        />
+                    </div>
+                    <div
+                        class="left-container"
+                        :style="`border-left: ${itemWidth}px solid transparent;border-bottom: ${itemHeight}px solid #3dbdca;`"
+                    ></div>
                     <div class="bg">
                         <div class="rotateBox" :style="currentRotateStyle">
                             <h1>{{ $t("product.appTitle") }}</h1>
@@ -87,6 +98,8 @@
                         : Image1250,
                 item3Cover: "cover",
                 item3Position: "center",
+                itemHeight: window.innerHeight - 120,
+                itemWidth: window.innerWidth,
             }
         },
         created() {
@@ -123,9 +136,6 @@
         mounted() {
             this.setListerner()
             window.addEventListener("resize", this.resizeListener)
-            let width = this.$refs.item2.offsetWidth
-            let height = this.$refs.item2.offsetHeight
-            this.tangle = width / height
         },
         methods: {
             setListerner() {
@@ -179,12 +189,7 @@
                 }
             },
             setItem2LabelPosition() {
-                let height = window.innerHeight
-                if (height > 1200) {
-                    this.currentRotateStyle = `top:${
-                        40 - ((height - 1200) / 50) * 2
-                    }%;`
-                }
+                this.currentRotateStyle = `transform: rotateZ(${this.computeAngles()}deg) translateX(-110%) translateY(300%)`
             },
             disableWheel(e) {
                 if (e.preventDefault) {
@@ -200,6 +205,26 @@
             resizeListener() {
                 this.setItem2LabelPosition()
                 this.setItem3Image()
+                this.itemHeight = window.innerHeight - 120
+                this.itemWidth = window.innerWidth
+            },
+            computeAngles(flag) {
+                // CosA=(c^2+b^2-a^2)/2bc
+                let a = window.innerHeight - 120
+                let b = window.innerWidth
+                let c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+                let cosVar
+                if (flag) {
+                    cosVar =
+                        (Math.pow(b, 2) + Math.pow(c, 2) - Math.pow(a, 2)) /
+                        (2 * b * c)
+                } else {
+                    cosVar =
+                        (Math.pow(c, 2) + Math.pow(a, 2) - Math.pow(b, 2)) /
+                        (2 * a * c)
+                }
+                let result = Math.PI / Math.acos(cosVar)
+                return 180 / result
             },
         },
         destroyed() {
@@ -208,6 +233,7 @@
         },
     }
 </script>
+
 <style lang="scss" scoped>
     .index {
         width: 100%;
@@ -220,7 +246,6 @@
 
     .item1 {
         background-color: #172026;
-        // position: relative;
         .container {
             position: relative;
             height: 100%;
@@ -244,24 +269,19 @@
                 max-width: 1200px;
             }
             .intro {
-                // top: 104px;
-
                 color: white;
                 min-height: 560px;
-                // width: 780px;
-                // position: relative;
                 z-index: 1;
                 max-width: 714px;
                 padding-left: 50px;
                 padding-right: 50px;
-                // right: 9%;
                 background: url(~@/assets/images/product1.1@2x.png) no-repeat;
                 background-size: 100% auto;
                 background-position: -10% auto;
                 h1 {
                     font-size: 44px;
                     font-family: PingFang SC Medium, PingFang SC Medium-Medium;
-                    font-weight: 500;
+                    font-weight: 600;
                     text-align: left;
                     color: #ffffff;
                     letter-spacing: 5px;
@@ -269,7 +289,7 @@
                 p {
                     font-size: 25px;
                     font-family: PingFang SC Medium, PingFang SC Medium-Medium;
-                    font-weight: 500;
+                    font-weight: 600;
                     text-align: left;
                     color: #ffffff;
                     letter-spacing: 0px;
@@ -292,30 +312,42 @@
         .item-box {
             position: relative;
             height: 100%;
+            width: 100%;
             overflow: hidden;
-            img {
+            .left-img {
                 position: absolute;
-                width: 60%;
-                top: -15%;
                 z-index: 1;
-                right: -1%;
+                right: 0%;
+                top: 0;
+                width: 60%;
+                height: 100%;
+                max-width: 1400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                > img {
+                    width: 100%;
+                }
+            }
+            .left-container {
+                position: absolute;
+                width: 0;
+                height: 0;
             }
             .bg {
-                background: url(~@/assets/images/tangle@2x.png) no-repeat 100%;
-                background-size: auto 100%;
                 height: 100%;
                 position: relative;
                 .rotateBox {
                     position: absolute;
-                    // top: 36%;
-                    // left: 36%;
-                    transform: translateX(-300px) translateY(0px) rotateZ(56deg);
+                    top: 50%;
+                    left: 50%;
                     h1 {
                         border-right: 15px solid #ffca50;
-                        font-size: 42px;
+                        font-size: 52px;
                         font-family: PingFang SC Regular,
                             PingFang SC Regular-Regular;
-                        font-weight: 400;
+                        font-weight: 600;
                         text-align: left;
                         color: #101010;
                         line-height: 42px;
@@ -325,10 +357,10 @@
                     p {
                         padding-top: 20px;
                         font-size: 17px;
-                        max-width: 400px;
+                        max-width: 440px;
                         font-family: PingFang SC Regular,
                             PingFang SC Regular-Regular;
-                        text-align: right;
+                        text-align: left;
                         color: #101010;
                         line-height: 25px;
                         float: right;
@@ -340,27 +372,14 @@
     .item3 {
         h2 {
             padding-top: 60px;
-            font-size: 68px;
+            font-size: 52px;
             text-align: center;
             font-family: PingFang SC Semibold, PingFang SC Semibold-Semibold;
             font-weight: 600;
             color: #1e1d1e;
         }
     }
-
-    @media screen and (min-width: 3000px) {
-    }
-
     @media screen and (min-width: 2600px) {
-        .item2 .item-box img {
-            max-width: 40%;
-            top: -5%;
-        }
-
-        .item2 .item-box .bg .rotateBox {
-            top: 40%;
-            left: 50%;
-        }
         .item1 .container .intro {
             width: 850px;
             max-width: 850px;
@@ -387,27 +406,13 @@
         .item1 .container .left-container {
             left: -300px;
         }
-        .item2 .item-box img {
-            max-width: 48%;
-            top: -5%;
-        }
-
-        .item2 .item-box .bg .rotateBox {
-            top: 40%;
-            left: 48%;
-        }
     }
 
     @media screen and (min-width: 1920px) {
-        .item2 .item-box img {
-            max-width: 48%;
-            top: -5%;
-        }
-
         .item1 .container .intro {
             max-width: 800px;
             h1 {
-                font-size: 37px;
+                font-size: 52px;
                 padding-top: 50px;
                 line-height: 37px;
             }
@@ -423,11 +428,6 @@
             }
         }
 
-        .item2 .item-box .bg .rotateBox {
-            top: 40%;
-            left: 49%;
-        }
-
         .item1 .container .left-container {
             left: -300px;
         }
@@ -437,6 +437,9 @@
         }
         .item1 .container .right-container {
             right: -200px;
+        }
+        .item2 .item-box .left-img {
+            max-width: 1400px;
         }
     }
 
@@ -461,21 +464,24 @@
         .item1 .container .left-container {
             left: -12%;
         }
-        .item2 .item-box img {
-            max-width: 60%;
-            top: -10%;
-            right: -5%;
-        }
-
-        .item2 .item-box .bg .rotateBox {
-            top: 40%;
-            left: 40%;
+        .item2 .item-box .left-img {
+            max-width: 1000px;
         }
         .item3 {
             h2 {
                 font-size: 50px;
-                // padding-top: 20px;
             }
+        }
+    }
+    @media screen and (max-width: 1920px) and (max-height: 1000px) {
+        .item2 .item-box .left-img {
+            max-width: 900px;
+            top: 10%;
+            right: 1%;
+        }
+        .item3 {
+            background: url(~@/assets/images/2600item3@2x.png) center top /
+                cover no-repeat !important;
         }
     }
 </style>
