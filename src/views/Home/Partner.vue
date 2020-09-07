@@ -14,6 +14,16 @@
                 </div>
                 <div class="item">
                     <div class="logo-box">
+                        <img
+                            src="@/assets/images/darwinanet@2x.png"
+                            alt=""
+                            style="width: 90px; height: 90px;"
+                        />
+                    </div>
+                    <span>Darwinia</span>
+                </div>
+                <div class="item">
+                    <div class="logo-box">
                         <img src="@/assets/images/bihu-logo@2x.png" alt="" />
                     </div>
                     <span>Bihu</span>

@@ -38,7 +38,9 @@
                 <div class="col">
                     <span>{{ $t("footer.summary") }}</span>
                     <ul>
-                        <li>{{ $t("navbar.articles") }}</li>
+                        <li>
+                            <a href="/news">{{ $t("navbar.articles") }}</a>
+                        </li>
                         <li>{{ $t("footer.contact-us") }}</li>
                     </ul>
                 </div>
