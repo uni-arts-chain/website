@@ -22,21 +22,16 @@
                     </div>
                     <span>Darwinia</span>
                 </div>
-                <div class="item">
-                    <div class="logo-box">
-                        <img src="@/assets/images/bihu-logo@2x.png" alt="" />
-                    </div>
-                    <span>Bihu</span>
-                </div>
+
                 <div class="item">
                     <div class="logo-box">
                         <img
-                            src="@/assets/images/hashkey-logo@2x.png"
-                            style="height: 36px;"
+                            src="@/assets/images/linzone@2x.png"
+                            style="height: 120px;"
                             alt=""
                         />
                     </div>
-                    <span>Hashkey</span>
+                    <span>LinZone</span>
                 </div>
                 <div class="item">
                     <div class="logo-box">
@@ -46,9 +41,9 @@
                 </div>
                 <div class="item">
                     <div class="logo-box">
-                        <img src="@/assets/images/ddex-logo@2x.png" alt="" />
+                        <img src="@/assets/images/bihu-logo@2x.png" alt="" />
                     </div>
-                    <span>DDEX</span>
+                    <span>Bihu</span>
                 </div>
             </div>
         </div>

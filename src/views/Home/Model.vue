@@ -41,10 +41,10 @@
                                 {{ $t("home.model-table-colum1") }}
                             </div>
                             <div class="td">
-                                {{ $t("home.model-table-colum2") }}
+                                {{ $t("home.model-table-colum3") }}
                             </div>
                             <div class="td">
-                                {{ $t("home.model-table-colum3") }}
+                                {{ $t("home.model-table-colum2") }}
                             </div>
                         </div>
                         <div class="body">
@@ -52,66 +52,116 @@
                                 <div class="td">
                                     {{ $t("home.model-table-colum4") }}
                                 </div>
-                                <div class="td">40%</div>
                                 <div class="td">
                                     {{
                                         $store.state.language == "en"
-                                            ? "84 Million"
-                                            : "8400万"
+                                            ? "25 Million"
+                                            : "2500万"
                                     }}
                                 </div>
+                                <div class="td"></div>
                             </div>
                             <div class="row">
                                 <div class="td">
                                     {{ $t("home.model-table-colum5") }}
                                 </div>
-                                <div class="td">10%</div>
+
                                 <div class="td">
                                     {{
                                         $store.state.language == "en"
-                                            ? "21 Million"
-                                            : "2100万"
+                                            ? "10 Million"
+                                            : "1000万"
                                     }}
                                 </div>
+                                <div class="td">40%</div>
                             </div>
                             <div class="row">
                                 <div class="td">
                                     {{ $t("home.model-table-colum6") }}
                                 </div>
-                                <div class="td">10%</div>
+
                                 <div class="td">
                                     {{
                                         $store.state.language == "en"
-                                            ? "21 Million"
-                                            : "2100万"
+                                            ? "5 Million"
+                                            : "500万"
                                     }}
                                 </div>
+                                <div class="td">25%</div>
                             </div>
                             <div class="row">
                                 <div class="td">
                                     {{ $t("home.model-table-colum7") }}
                                 </div>
-                                <div class="td">10%</div>
+
                                 <div class="td">
                                     {{
                                         $store.state.language == "en"
-                                            ? "21 Million"
-                                            : "2100万"
+                                            ? "1.5 Million"
+                                            : "150万"
                                     }}
                                 </div>
+                                <div class="td">6%</div>
                             </div>
                             <div class="row">
                                 <div class="td">
                                     {{ $t("home.model-table-colum8") }}
                                 </div>
-                                <div class="td">30%</div>
+
                                 <div class="td">
                                     {{
                                         $store.state.language == "en"
-                                            ? "63 Million"
-                                            : "6300万"
+                                            ? "1 Million"
+                                            : "100万"
                                     }}
                                 </div>
+                                <div class="td">4%</div>
+                            </div>
+                            <div class="row">
+                                <div class="td">
+                                    {{ $t("home.model-table-colum26") }}
+                                </div>
+
+                                <div class="td">
+                                    {{
+                                        $store.state.language == "en"
+                                            ? "1.5 Million"
+                                            : "150万"
+                                    }}
+                                </div>
+                                <div class="td">6%</div>
+                            </div>
+                            <div class="row">
+                                <div class="td">
+                                    {{ $t("home.model-table-colum27") }}
+                                </div>
+
+                                <div class="td">
+                                    {{
+                                        $store.state.language == "en"
+                                            ? "2 Million"
+                                            : "200万"
+                                    }}
+                                </div>
+                                <div class="td">8%</div>
+                            </div>
+                            <div class="row">
+                                <div class="td">
+                                    {{ $t("home.model-table-colum28") }}
+                                </div>
+                                <div class="td">
+                                    {{ $t("home.model-table-colum30") }}
+                                </div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="row">
+                                <div class="td">
+                                    {{ $t("home.model-table-colum29") }}
+                                </div>
+                                <div class="td">
+                                    {{ $t("home.model-table-colum31") }}
+                                </div>
+                                <div class="td"></div>
                             </div>
                         </div>
                     </div>
