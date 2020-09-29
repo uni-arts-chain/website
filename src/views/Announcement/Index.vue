@@ -3,22 +3,26 @@
     <div class="index">
         <div class="container">
             <h1>{{ $t("navbar.articles") }}</h1>
+            <!-- <p>{{$t("news.no-data")}}</p> -->
             <router-link to="/news/1" class="card">
                 <div class="img"></div>
                 <div class="content">
-                    <h4>什么是OCO订单（选择性委托订单）？</h4>
-                    <p>
-                        OCO订单（选择性委托订单）是一项简单但功能强大的工具，它OCO订单（选择性委托订单）是一项简单但功能但功能强大的工具，能够让你和其他币安用户一起通过更为安全和多样的方式进行交易。
-                    </p>
+                    <h4>{{ $t("news.articles1-title") }}</h4>
+                    <p>{{ $t("news.articles1-detail") }}</p>
                 </div>
             </router-link>
             <router-link to="/news/2" class="card">
                 <div class="img"></div>
                 <div class="content">
-                    <h4>什么是OCO订单（选择性委托订单）？</h4>
-                    <p>
-                        OCO订单（选择性委托订单）是一项简单但功能强大的工具，它OCO订单（选择性委托订单）是一项简单但功能但功能强大的工具，能够让你和其他币安用户一起通过更为安全和多样的方式进行交易。
-                    </p>
+                    <h4>{{ $t("news.articles2-title") }}</h4>
+                    <p>{{ $t("news.articles2-detail") }}</p>
+                </div>
+            </router-link>
+            <router-link to="/news/3" class="card">
+                <div class="img"></div>
+                <div class="content">
+                    <h4>{{ $t("news.articles3-title") }}</h4>
+                    <p>{{ $t("news.articles3-detail") }}</p>
                 </div>
             </router-link>
         </div>
@@ -52,6 +56,7 @@
     .card {
         cursor: pointer;
         border-radius: 8px;
+        overflow: hidden;
         box-shadow: 0 5px 9px rgba(0, 0, 0, 0.08), 0 5px 9px rgba(0, 0, 0, 0.04);
         display: flex;
         justify-content: space-between;
@@ -85,7 +90,7 @@
     }
     .img {
         width: 300px;
-        background: url(~@/assets/images/ecology1@2x.png) no-repeat;
+        background: url(~@/assets/images/faq@2x.png) no-repeat;
         background-size: cover;
     }
 

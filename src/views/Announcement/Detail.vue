@@ -2,17 +2,10 @@
 <template>
     <div class="detail">
         <div class="container">
-            <h1>什么是OCO订单（选择性委托订单）？</h1>
-            <img src="@/assets/images/ecology1@2x.png" alt="" />
+            <h1>{{ $t("news.articles" + id + "-title") }}</h1>
+            <img src="@/assets/images/faq@2x.png" alt="" />
             <div class="content">
-                OCO订单（选择性委托订单）或“二选一”订单支持用户同时提交两个订单。它结合了限价订单和止盈止损，但最终只能执行其中一个。
-                换句话说，只要其中一个订单部分或全部被执行，则另一个订单将自动取消。请注意，若取消其中一个订单，则另一个订单也会被取消。
-                换句话说，只要其中一个订单部分或全部被执行，则另一个订单将自动取消。请注意，若取消其中一个订单，则另一个订单也会被取消。
-                换句话说，只要其中一个订单部分或全部被执行，则另一个订单将自动取消。请注意，若取消其中一个订单，则另一个订单也会被取消。<br />
-                换句话说，只要其中一个订单部分或全部被执行，则另一个订单将自动取消。请注意，若取消其中一个订单，则另一个订单也会被取消。
-                换句话说，只要其中一个订单部分或全部被执行，则另一个订单将自动取消。请注意，若取消其中一个订单，则另一个订单也会被取消。<br />
-
-                换句话说，只要其中一个订单部分或全部被执行，则另一个订单将自动取消。请注意，若取消其中一个订单，则另一个订单也会被取消。
+                {{ $t("news.articles" + id + "-content") }}
             </div>
         </div>
     </div>
@@ -21,7 +14,9 @@
     export default {
         name: "detail",
         data() {
-            return {}
+            return {
+                id: this.$route.params.id,
+            }
         },
     }
 </script>
@@ -44,10 +39,11 @@
     .content {
         text-align: left;
         color: #101010;
-        font-size: 16px;
+        font-size: 17px;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
         -webkit-text-stroke: 1px transparent;
         margin-bottom: 1rem;
         line-height: 2rem;
+        text-indent: 34px;
     }
 </style>

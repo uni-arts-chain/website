@@ -5,7 +5,7 @@
         "testnet": "测试网络",
         "explorer": "浏览器",
         "products": "产品",
-        "articles": "新闻"
+        "articles": "FAQ"
     },
     "home": {
         "banner-title": "链接信用 助力原创",
@@ -112,6 +112,18 @@
         "appTitle": "应用APP",
         "appDesc": "艺术品资产NFT发行、交易、拍卖、验证",
         "dappTitle": "Dapp 交易平台"
+    },
+    "news": {
+        "no-data": "暂无新闻",
+        "articles1-title": "云画链(Uni-Arts Chain)是什么？",
+        "articles1-detail": "云画链(Uni-Arts)自身定位于应用链，旨在提供一个基于区块链的艺术品创作、鉴赏、交易、溯源、拍卖一站式平台与平台开放工具，同时通过Polkadot的跨链网络支持来自其它区块链网络的链资产和NFT。",
+        "articles1-content": "云画链(Uni-Arts)自身定位于应用链，旨在提供一个基于区块链的艺术品创作、鉴赏、交易、溯源、拍卖一站式平台与平台开放工具，同时通过Polkadot的跨链网络支持来自其它区块链网络的链资产和NFT。云画链通过区块链基础设施和Dapp为上述功能提供支持。云画链团队会充分运用开发的链上工具，进行艺术品创作与分享平台的运营，同时其它任何第三方也可以运用云画链的基础设施结合自身业务与资源优势开展类似业务。",
+        "articles2-title": "项目为什么要选择加入Polkadot生态？",
+        "articles2-detail": "Polkadot的Substrate的技术框架非常优秀，对云画链这种应用型区块链的性能和功能支持很友好，比如：BABE/GRANDPA算法实现NPoS共识协议稳定性与高效性满足应用链应用需求，基于WebAssembly的链升级技术保证了产品快速迭代以及链上升级的需求。",
+        "articles2-content": "首先，Polkadot的Substrate的技术框架非常优秀，对云画链这种应用型区块链的性能和功能支持很友好，比如：BABE/GRANDPA算法实现NPoS共识协议稳定性与高效性满足应用链应用需求，基于WebAssembly的链升级技术保证了产品快速迭代以及链上升级的需求。同时Polkadot的去中心社区治理方式是以后区块链及互联网发展的方向，也是云画链追求的方向。最后，XCMP跨链协议为云画链艺术品资产跨链生态带来了可能性。",
+        "articles3-title": "什么是UART和UINK?",
+        "articles3-detail": "UART 是Uni-Arts Chain Network的Native Token，初始供应量为1千万。主要用于维持网络生态安全、去中心化、和出块奖励等。",
+        "articles3-content": "UART 是Uni-Arts Chain Network的Native Token，初始供应量为1千万。主要用于维持网络生态安全、去中心化、和出块奖励等。UINK是Uni-Arts Chain Network的首发应用治理Token，初始供应量为零，只能通过锁定UART生成。总量无上限，有销毁机质。 主要用于应用的社区化发展与激励。后期随着应用上线会有更多丰富的UINK的玩法。"
     },
     "footer": {
         "summary": "摘要",

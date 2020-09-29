@@ -36,7 +36,7 @@
                     <li>
                         <a
                             target="_blank"
-                            href="https://github.com/uni-arts-chain/UniArts-white-paper/blob/master/uniarts-white-paper.pdf"
+                            href="https://github.com/uni-arts-chain/UniArts-white-paper"
                             >{{ $t("navbar.white-page") }}</a
                         >
                     </li>
