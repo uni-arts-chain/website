@@ -31,7 +31,10 @@
                             ></a>
                         </li>
                         <li>
-                            <a></a>
+                            <a
+                                target="_blank"
+                                href="https://discord.gg/ujZeGvX"
+                            ></a>
                         </li>
                     </ul>
                 </div>
@@ -182,9 +185,15 @@
                 background-size: 24px 24px;
             }
             ul li:nth-child(5) {
-                background: url(~@/assets/images/weibo@2x.png) no-repeat;
-                background-size: 24px 24px;
+                background: url(~@/assets/images/discord@2x.png) no-repeat;
+                background-position: -5px -4px;
+                background-size: 34px 34px;
+                border-radius: 4px;
             }
+            // ul li:nth-child(5) {
+            //     background: url(~@/assets/images/weibo@2x.png) no-repeat;
+            //     background-size: 24px 24px;
+            // }
             > img {
                 width: 138px;
             }
