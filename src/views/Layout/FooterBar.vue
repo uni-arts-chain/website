@@ -22,7 +22,7 @@
                             <a href="https://t.me/uniarts" target="_blank"></a>
                         </li>
                         <li>
-                            <a></a>
+                            <a href="mailto:support@vigchain.com"></a>
                         </li>
                         <li>
                             <a
