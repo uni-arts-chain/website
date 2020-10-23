@@ -100,6 +100,22 @@
                 let curLang = this.lang == "en" ? "zh" : "en"
                 this.$store.dispatch("UpdateLanguage", curLang)
                 this.$i18n.locale = curLang
+                if (curLang == "zh") {
+                    let meta_keywords = document.querySelector(
+                        "meta[name=keywords]"
+                    )
+                    let meta_description = document.querySelector(
+                        "meta[name=description]"
+                    )
+                    meta_keywords.setAttribute(
+                        "content",
+                        this.$t("meta.keywords")
+                    )
+                    meta_description.setAttribute(
+                        "content",
+                        this.$t("meta.description")
+                    )
+                }
             },
         },
     }
