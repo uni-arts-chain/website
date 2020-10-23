@@ -42,7 +42,7 @@
                     <span>{{ $t("footer.summary") }}</span>
                     <ul>
                         <li>
-                            <a href="/news">{{ $t("navbar.articles") }}</a>
+                            <a href="/faq">{{ $t("navbar.articles") }}</a>
                         </li>
                         <li>{{ $t("footer.contact-us") }}</li>
                     </ul>

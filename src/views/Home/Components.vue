@@ -133,7 +133,7 @@
     }
     .bottom {
         .item p {
-            max-width: initial;
+            max-width: 450px;
         }
     }
     .circle {

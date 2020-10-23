@@ -54,7 +54,7 @@
                         }}</router-link>
                     </li>
                     <li>
-                        <router-link to="/news">{{
+                        <router-link to="/faq">{{
                             $t("navbar.articles")
                         }}</router-link>
                     </li>

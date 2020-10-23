@@ -4,21 +4,21 @@
         <div class="container">
             <h1>{{ $t("navbar.articles") }}</h1>
             <!-- <p>{{$t("news.no-data")}}</p> -->
-            <router-link to="/news/1" class="card">
+            <router-link to="/faq/1" class="card">
                 <div class="img"></div>
                 <div class="content">
                     <h4>{{ $t("news.articles1-title") }}</h4>
                     <p>{{ $t("news.articles1-detail") }}</p>
                 </div>
             </router-link>
-            <router-link to="/news/2" class="card">
+            <router-link to="/faq/2" class="card">
                 <div class="img"></div>
                 <div class="content">
                     <h4>{{ $t("news.articles2-title") }}</h4>
                     <p>{{ $t("news.articles2-detail") }}</p>
                 </div>
             </router-link>
-            <router-link to="/news/3" class="card">
+            <router-link to="/faq/3" class="card">
                 <div class="img"></div>
                 <div class="content">
                     <h4>{{ $t("news.articles3-title") }}</h4>
