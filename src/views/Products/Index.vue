@@ -78,7 +78,7 @@
 </template>
 <script>
     import throttle from "lodash/throttle"
-    import Image1250 from "@/assets/images/1250item3@2x.png"
+    import Image1250 from "@/assets/images/1250item4@2x.png"
     import Image1920 from "@/assets/images/1920item3@2x.png"
     import Image2600 from "@/assets/images/2600item3@2x.png"
     export default {
