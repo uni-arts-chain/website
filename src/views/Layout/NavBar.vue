@@ -41,12 +41,19 @@
                         >
                     </li>
                     <li>
-                        <a>{{ $t("navbar.testnet") }}</a>
+                        <a
+                            target="_blank"
+                            href="https://telemetry.polkadot.io/#list/Uni-Arts%20Staging%20network
+"
+                            >{{ $t("navbar.testnet") }}</a
+                        >
                     </li>
                     <li>
-                        <a target="_blank" href="https://polkadot.subscan.io">{{
-                            $t("navbar.explorer")
-                        }}</a>
+                        <a
+                            target="_blank"
+                            href="http://explorer.uniarts.me/#/explorer"
+                            >{{ $t("navbar.explorer") }}</a
+                        >
                     </li>
                     <li :class="{ active: $route.path == '/products' }">
                         <router-link to="/products">{{
@@ -62,7 +69,11 @@
                         class="other"
                         style="margin-left: 20; margin-right: 0px;"
                     >
-                        <a class="wallet"></a>
+                        <a
+                            class="wallet"
+                            target="_blank"
+                            href="https://app.uniarts.me"
+                        ></a>
                         <a
                             class="github"
                             target="_blank"
@@ -206,10 +217,10 @@
             }
         }
         .wallet {
-            width: 30px;
+            width: 25px;
             height: 25px;
-            background-image: url(~@/assets/images/wallet@2x.png);
-            background-size: 30px 25px;
+            background-image: url(~@/assets/images/uniarts.png);
+            background-size: 25px 25px;
             background-repeat: no-repeat;
         }
         .github {

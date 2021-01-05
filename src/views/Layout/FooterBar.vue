@@ -50,8 +50,15 @@
                 <div class="col">
                     <span>{{ $t("footer.technology") }}</span>
                     <ul>
-                        <li>{{ $t("navbar.testnet") }}</li>
-                        <li>{{ $t("footer.telemetry") }}</li>
+                        <!-- <li>{{ $t("navbar.testnet") }}</li> -->
+                        <li>
+                            <a
+                                target="_blank"
+                                href="https://telemetry.polkadot.io/#list/Uni-Arts%20Staging%20network
+"
+                                >{{ $t("footer.telemetry") }}</a
+                            >
+                        </li>
                         <li>
                             <a
                                 target="_blank"
@@ -64,11 +71,15 @@
                 <div class="col">
                     <span>{{ $t("footer.product") }}</span>
                     <ul>
-                        <li>{{ $t("footer.uni-arts-chain") }}</li>
+                        <li>
+                            <a target="_blank" href="https://app.uniarts.me">{{
+                                $t("footer.uni-arts-chain")
+                            }}</a>
+                        </li>
                         <li>
                             <a
                                 target="_blank"
-                                href="https://polkadot.subscan.io"
+                                href="http://explorer.uniarts.me/#/explorer"
                                 >{{ $t("navbar.explorer") }}</a
                             >
                         </li>
