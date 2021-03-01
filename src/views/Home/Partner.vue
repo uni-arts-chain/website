@@ -67,7 +67,7 @@
     .partner {
         padding-top: 100px;
         position: relative;
-        padding-bottom: 300px;
+        padding-bottom: 70px;
     }
     h2 {
         text-align: left;

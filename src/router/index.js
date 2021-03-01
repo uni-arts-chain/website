@@ -13,6 +13,12 @@ const routes = [
     },
     {
         name: "",
+        path: "/news",
+        component: () =>
+            import(/* webpackChunkName: "news" */ "@/views/News/Index"),
+    },
+    {
+        name: "",
         path: "/faq",
         component: () =>
             import(/* webpackChunkName: "news" */ "@/views/Announcement/Index"),

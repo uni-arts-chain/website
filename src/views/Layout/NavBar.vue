@@ -65,6 +65,11 @@
                             $t("navbar.articles")
                         }}</router-link>
                     </li>
+                    <!-- <li>
+                        <router-link to="/news">{{
+                            $t("navbar.news")
+                        }}</router-link>
+                    </li> -->
                     <li
                         class="other"
                         style="margin-left: 20; margin-right: 0px;"

@@ -5,7 +5,8 @@
         "testnet": "测试网络",
         "explorer": "浏览器",
         "products": "产品",
-        "articles": "FAQ"
+        "articles": "FAQ",
+        "news": "新闻"
     },
     "home": {
         "banner-title": "链接信用 助力原创",
@@ -125,6 +126,9 @@
         "articles3-detail": "UART 是Uni-Arts Chain Network的Native Token，初始供应量为1千万。主要用于维持网络生态安全、去中心化、和出块奖励等。",
         "articles3-content": "UART 是Uni-Arts Chain Network的Native Token，初始供应量为1千万。主要用于维持网络生态安全、去中心化、和出块奖励等。UINK是Uni-Arts Chain Network的首发应用治理Token，初始供应量为零，只能通过锁定UART生成。总量无上限，有销毁机质。 主要用于应用的社区化发展与激励。后期随着应用上线会有更多丰富的UINK的玩法。"
     },
+    "new": {
+        "title": "新闻"
+    },
     "footer": {
         "summary": "摘要",
         "contact-us": "联系我们",
@@ -137,5 +141,7 @@
         "keywords": "云画链,NFT,跨链,波卡,名称服务,去中心化,去中心化交易,非标资产拍卖市场",
         "description": "云画链是基于Substrate开发的跨链桥接网络，专注于建设未来文化艺术品NFT资产互联网络，包括数字文化资产拍卖市场、数字艺术品兑换等领域"
     },
-    "global": {}
+    "global": {
+        "more": "更多"
+    }
 }

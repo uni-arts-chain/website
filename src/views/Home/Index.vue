@@ -8,6 +8,7 @@
         <Route></Route>
         <Team></Team>
         <Partner></Partner>
+        <!-- <News></News> -->
     </div>
 </template>
 
@@ -20,6 +21,7 @@
     import Route from "./Route.vue"
     import Team from "./Team.vue"
     import Partner from "./Partner.vue"
+    // import News from "./News.vue"
     export default {
         components: {
             Banner,
@@ -30,6 +32,7 @@
             Route,
             Team,
             Partner,
+            // News,
         },
     }
 </script>
@@ -37,5 +40,6 @@
 <style scoped lang="scss">
     .home {
         overflow: hidden;
+        padding-bottom: 150px;
     }
 </style>
