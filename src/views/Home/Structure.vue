@@ -66,8 +66,8 @@
         }
     }
     .bottom {
-        padding-top: 100px;
-        padding-bottom: 40px;
+        padding-top: 150px;
+        padding-bottom: 150px;
         padding-left: 0;
         padding-right: 0;
     }

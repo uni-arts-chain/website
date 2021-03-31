@@ -3,7 +3,7 @@
         <Banner></Banner>
         <Components></Components>
         <Structure></Structure>
-        <Model></Model>
+        <!-- <Model></Model> -->
         <Ecology></Ecology>
         <Route></Route>
         <Team></Team>
@@ -16,7 +16,7 @@
     import Banner from "./Banner.vue"
     import Components from "./Components.vue"
     import Structure from "./Structure.vue"
-    import Model from "./Model.vue"
+    // import Model from "./Model.vue"
     import Ecology from "./Ecology.vue"
     import Route from "./Route.vue"
     import Team from "./Team.vue"
@@ -27,7 +27,7 @@
             Banner,
             Components,
             Structure,
-            Model,
+            // Model,
             Ecology,
             Route,
             Team,
