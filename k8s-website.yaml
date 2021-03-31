@@ -58,8 +58,18 @@ spec:
   - hosts:
     - uniarts.me
     secretName: uni-arts-tls
+  - hosts:
+    - uniarts.network
+    secretName: uni-arts-network-tls
   rules:
   - host: uniarts.me
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: frontend
+          servicePort: 80
+  - host: uniarts.network
     http:
       paths:
       - path: /
