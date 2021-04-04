@@ -15,19 +15,12 @@
                 </div>
             </div>
         </div>
-        <CusCircle class="circle1" r="24.5" bg="#50c3ff"></CusCircle>
-        <CusCircle class="circle2" r="14" bg="#50c3ff"></CusCircle>
-        <CusCircle class="circle3" r="24.5" bg="#ffca50"></CusCircle>
     </div>
 </template>
 
 <script>
-    import CusCircle from "@/components/Circle"
     export default {
         name: "ecology",
-        components: {
-            CusCircle,
-        },
     }
 </script>
 
@@ -40,12 +33,11 @@
         background-color: #f1faff;
     }
     h2 {
-        text-align: left;
         font-size: 38px;
-        font-weight: 300;
-        text-align: left;
+        font-family: Microsoft YaHei Bold, Microsoft YaHei Bold-Bold;
+        font-weight: 700;
+        text-align: center;
         color: #101010;
-        letter-spacing: 0px;
         margin-bottom: 65px;
     }
     .body {
@@ -73,29 +65,13 @@
             margin-bottom: 10px;
         }
         p {
-            font-size: 16px;
+            width: 497px;
+            font-size: 18px;
+            font-family: Helvetica Neue Regular, Helvetica Neue Regular-Regular;
             font-weight: 400;
             text-align: center;
             color: #101010;
             line-height: 30px;
-            max-width: 470px;
-            letter-spacing: 0px;
         }
-    }
-
-    .circle1 {
-        top: 30%;
-        left: 5%;
-        z-index: 0;
-    }
-    .circle2 {
-        z-index: 0;
-        right: 8%;
-        top: 30%;
-    }
-    .circle3 {
-        z-index: 0;
-        right: 2%;
-        bottom: 15%;
     }
 </style>

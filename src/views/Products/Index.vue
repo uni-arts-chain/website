@@ -57,7 +57,7 @@
                     </div>
                     <div
                         class="left-container"
-                        :style="`border-left: ${itemWidth}px solid transparent;border-bottom: ${itemHeight}px solid #3dbdca;`"
+                        :style="`border-left: ${itemWidth}px solid transparent;border-bottom: ${itemHeight}px solid #65a0fe;`"
                     ></div>
                     <div class="bg">
                         <div class="rotateBox" :style="currentRotateStyle">

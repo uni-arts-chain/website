@@ -2,25 +2,13 @@
     <nav :class="{ products: isProducts }">
         <div class="container">
             <img
+                @click="goHome"
                 class="left"
-                v-if="$store.state.isProducts && $store.state.language == 'en'"
-                src="@/assets/images/bottom-logo2@2x.png"
-                style="height: 55px; margin-top: -10px; margin-left: 5px;"
+                v-if="$store.state.language == 'en'"
+                src="@/assets/images/logo@2x.png"
             />
             <img
-                class="left"
-                v-else-if="
-                    $store.state.isProducts && $store.state.language == 'zh'
-                "
-                src="@/assets/images/bottom-logo@2x.png"
-                style="height: 55px; margin-top: -10px; margin-left: 5px;"
-            />
-            <img
-                class="left"
-                v-else-if="$store.state.language == 'en'"
-                src="@/assets/images/logo2@2x.png"
-            />
-            <img
+                @click="goHome"
                 class="left"
                 v-else-if="$store.state.language == 'zh'"
                 src="@/assets/images/logo@2x.png"
@@ -28,11 +16,6 @@
             />
             <div class="right" :class="{ en: $store.state.language == 'en' }">
                 <ul>
-                    <li :class="{ active: $route.path == '/' }">
-                        <router-link to="/">{{
-                            $t("navbar.home")
-                        }}</router-link>
-                    </li>
                     <li>
                         <a
                             target="_blank"
@@ -112,6 +95,9 @@
             },
         },
         methods: {
+            goHome() {
+                this.$router.push("/")
+            },
             changeLanguage() {
                 let curLang = this.lang == "en" ? "zh" : "en"
                 this.$store.dispatch("UpdateLanguage", curLang)
@@ -139,7 +125,7 @@
 
 <style scoped lang="scss">
     nav {
-        height: 120px;
+        height: 90px;
         flex: 0 0 auto;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -151,8 +137,8 @@
             color: white;
         }
         .right li.active {
-            color: black;
-            background-color: #fff;
+            color: white;
+            /* background-color: #fff; */
         }
         .github {
             background-image: url(~@/assets/images/github2@2x.png);
@@ -169,12 +155,11 @@
     }
 
     img.left {
-        height: 75px;
+        height: 45px;
+        cursor: pointer;
     }
     .right.en {
         li {
-            margin-left: 5px;
-            margin-right: 5px;
             cursor: pointer;
         }
     }
@@ -185,18 +170,14 @@
             justify-content: space-around;
         }
         li {
-            font-size: 16px;
-            font-weight: 400;
+            opacity: 1;
+            font-size: 20px;
+            font-family: Helvetica Neue Thin, Helvetica Neue Thin-Thin;
+            font-weight: 200;
             text-align: center;
             color: #101010;
             letter-spacing: 1px;
-            margin-left: 20px;
-            margin-right: 20px;
-            padding-left: 12px;
-            padding-top: 3px;
-            padding-bottom: 3px;
-            padding-right: 12px;
-            cursor: pointer;
+            margin: 0 20px;
         }
         li a {
             color: inherit;
@@ -204,9 +185,6 @@
             white-space: nowrap;
         }
         li.active {
-            background: #51c2ff;
-            border-radius: 16px;
-            color: white;
         }
         li.other {
             padding-left: 0;

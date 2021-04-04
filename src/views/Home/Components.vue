@@ -3,148 +3,135 @@
         <div class="container">
             <h2>{{ $t("home.components-title") }}</h2>
             <div class="item-body">
-                <div class="top">
-                    <div class="item">
-                        <div class="img-box">
-                            <img
-                                style="height: 61px;"
-                                src="@/assets/images/core@2x.png"
-                                alt=""
-                            />
-                        </div>
-                        <h4>{{ $t("home.components-item1") }}</h4>
-                        <p>{{ $t("home.components-item1-desc") }}</p>
+                <div class="item">
+                    <div class="img-box">
+                        <img
+                            src="@/assets/images/SDK@2x.png"
+                            style="width: 81px; height: 67px;"
+                            alt=""
+                        />
                     </div>
-                    <div class="item">
-                        <div class="img-box">
-                            <img
-                                style="height: 44px;"
-                                src="@/assets/images/polkadot@2x.png"
-                                alt=""
-                            />
-                        </div>
-                        <h4>{{ $t("home.components-item2") }}</h4>
-                        <p>{{ $t("home.components-item2-desc") }}</p>
-                    </div>
-                    <div class="item">
-                        <div class="img-box">
-                            <img
-                                style="height: 64px;"
-                                src="@/assets/images/shield@2x.png"
-                                alt=""
-                            />
-                        </div>
-                        <h4>{{ $t("home.components-item3") }}</h4>
-                        <p>
-                            {{ $t("home.components-item3-desc") }}
-                        </p>
-                    </div>
+                    <h3>NFT Maker SDK</h3>
+                    <p>
+                        NFT maker SDK tool is a set of mainstream authoring tool
+                        plug-ins. It is used for editing software such as
+                        Photoshop, cubism editor, and Final Cut Pro. It can
+                        forward authoring content to NFT with one click and
+                        publish it on uniarts network
+                    </p>
                 </div>
-                <div class="bottom">
-                    <div class="item">
-                        <div class="img-box" style="min-height: 71px;">
-                            <img
-                                style="height: 71px;"
-                                src="@/assets/images/pretext@2x.png"
-                                alt=""
-                            />
-                        </div>
-                        <h4>{{ $t("home.components-item4") }}</h4>
-                        <p>
-                            {{ $t("home.components-item4-desc") }}
-                        </p>
+                <div class="item">
+                    <div class="img-box">
+                        <img
+                            src="@/assets/images/brige@2x.png"
+                            style="width: 112px; height: 47px;"
+                            alt=""
+                        />
                     </div>
-                    <div class="item">
-                        <div class="img-box" style="min-height: 71px;">
-                            <img
-                                style="height: 70px;"
-                                src="@/assets/images/market@2x.png"
-                                alt=""
-                            />
-                        </div>
-                        <h4>{{ $t("home.components-item5") }}</h4>
-                        <p>
-                            {{ $t("home.components-item5-desc") }}
-                        </p>
+                    <h3>Cross link bridge</h3>
+                    <p>
+                        NFT maker SDK tool is a set of mainstream authoring tool
+                        plug-ins. It is used for editing software such as
+                        Photoshop, cubism editor, and Final Cut Pro. It can
+                        forward authoring content to NFT with one click and
+                        publish it on uniarts network
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img
+                            src="@/assets/images/dao@2x.png"
+                            style="width: 83px; height: 77px;"
+                            alt=""
+                        />
                     </div>
+                    <h3>DAO Governance</h3>
+                    <p>
+                        NFT maker SDK tool is a set of mainstream authoring tool
+                        plug-ins. It is used for editing software such as
+                        Photoshop, cubism editor, and Final Cut Pro. It can
+                        forward authoring content to NFT with one click and
+                        publish it on uniarts network
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img
+                            src="@/assets/images/shop@2x.png"
+                            style="width: 81px; height: 56px;"
+                            alt=""
+                        />
+                    </div>
+                    <h3>Personalized store SDK</h3>
+                    <p>
+                        NFT maker SDK tool is a set of mainstream authoring tool
+                        plug-ins. It is used for editing software such as
+                        Photoshop, cubism editor, and Final Cut Pro. It can
+                        forward authoring content to NFT with one click and
+                        publish it on uniarts network
+                    </p>
                 </div>
             </div>
         </div>
-        <CusCircle class="circle1" r="108" bg="#50c3ff"></CusCircle>
-        <CusCircle class="circle2" r="22.5" bg="#ffca50"></CusCircle>
     </div>
 </template>
 
 <script>
-    import CusCircle from "@/components/Circle"
     export default {
         name: "components",
-        components: {
-            CusCircle,
-        },
     }
 </script>
 
 <style scoped lang="scss">
     .components {
         padding-top: 96px;
+        padding-bottom: 200px;
         position: relative;
+        background: url(~@/assets/images/key-features@2x.png) no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     h2 {
-        text-align: left;
+        opacity: 1;
         font-size: 38px;
-        font-weight: 300;
-        text-align: left;
-        color: #101010;
-        letter-spacing: 0px;
+        font-family: Microsoft YaHei Bold, Microsoft YaHei Bold-Bold;
+        font-weight: 800;
+        text-align: center;
         margin-bottom: 65px;
+        color: #101010;
     }
-    .top,
-    .bottom {
-        margin-bottom: 60px;
+    .item-body {
         display: flex;
-        align-items: flex-start;
-        justify-content: space-around;
+        justify-content: space-between;
+        flex-wrap: wrap;
         .item {
-            .img-box {
-                min-height: 64px;
-                margin-bottom: 35px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            h4 {
-                font-size: 18px;
-                font-weight: 600;
-                text-align: center;
-                color: #101010;
-                letter-spacing: 0px;
-                margin-bottom: 19px;
-            }
-            p {
-                font-size: 16px;
-                font-weight: 400;
-                text-align: center;
-                color: #101010;
-                letter-spacing: 0px;
-                max-width: 242px;
-            }
+            width: 585px;
+            /* height: 309px; */
+            padding: 24px 29px 40px 29px;
+            margin-bottom: 40px;
+            background: #ffffff;
+            box-shadow: 0px 0px 28px 2px rgba(198, 198, 198, 0.29);
         }
-    }
-    .bottom {
-        .item p {
-            max-width: 450px;
+        .img-box {
+            height: 77px;
+            text-align: left;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
         }
-    }
-    .circle {
-        position: absolute;
-    }
-    .circle1 {
-        left: -108px;
-        bottom: -10px;
-    }
-    .circle2 {
-        right: 147px;
-        bottom: 40%;
+        h3 {
+            font-size: 25px;
+            font-weight: 500;
+            text-align: left;
+            color: #101010;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+            color: #101010;
+            line-height: 30px;
+        }
     }
 </style>

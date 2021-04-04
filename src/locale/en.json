@@ -9,7 +9,7 @@
         "news": "News"
     },
     "home": {
-        "banner-title": "Enhance Credibility and Encourage Originality",
+        "banner-title": "Enhance Credibility &nbsp;&nbsp; Encourage Originality",
         "banner-desc": "Uni-Arts Chain is a cross-chain bridging network developed based on Substrate, focusing on the construction of the future cultural art NFT asset interconnection network, including digital cultural asset auction market, digital art exchange and other fields",
         "banner-button": "Subscription",
         "components-title": "Key Features",
@@ -69,7 +69,7 @@
         "ecology-title-item1-desc": "Uni-Arts Chain members obtain the dividend right of the platform through the points obtained in the process of participating in the art transaction. The community builds a self-governed digital community based on the decentralized dividend right.",
         "ecology-title-item2-title": "Digital Cultural Asset Auction",
         "ecology-title-item2-desc": "The decentralized digital cultural asset auction market supports the auction of digital cultural assets on different blockchain networks through cross-chain auctions, creating a new cross-chain circulation scenario for non-standard assets",
-        "route-title": "Road Map",
+        "route-title": "Roadmap",
         "route-item1-title": "Milestone I",
         "route-item1-date": "expected Q4, 2020",
         "route-item1-li1": "Development of the Alpha version of the Uni-Arts Chain blockchain is complete",
@@ -101,8 +101,8 @@
         "route-item4-li5": "Uni-Arts Chain applications App line on the full functionality",
         "route-item4-li6": "More artworks and intangible heritage products are online",
         "team-title": "Development Team",
-        "team-desc": "The VigChain team will support the development of the Uni-Arts Chain network",
-        "partner-title": "Partner"
+        "team-desc": "The VigChain team will support <br/> the development of the Uni-Arts Chain network",
+        "partner-title": "Partners"
     },
     "product": {
         "title": "Uni-Arts Chain",

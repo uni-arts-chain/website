@@ -35,31 +35,24 @@
                 </div>
                 <div class="item">
                     <div class="logo-box">
-                        <img src="@/assets/images/imtoken-logo@2x.png" alt="" />
-                    </div>
-                    <span>imToken</span>
-                </div>
-                <div class="item">
-                    <div class="logo-box">
                         <img src="@/assets/images/bihu-logo@2x.png" alt="" />
                     </div>
                     <span>Bihu</span>
                 </div>
+                <div class="item">
+                    <div class="logo-box">
+                        <img src="@/assets/images/imtoken-logo@2x.png" alt="" />
+                    </div>
+                    <span>imToken</span>
+                </div>
             </div>
         </div>
-        <CusCircle class="circle1" r="24.5" bg="#ffca50"></CusCircle>
-        <CusCircle class="circle2" r="34.5" bg="#50c3ff"></CusCircle>
-        <CusCircle class="circle3" r="50" bg="#ffca50"></CusCircle>
     </div>
 </template>
 
 <script>
-    import CusCircle from "@/components/Circle"
     export default {
         name: "partner",
-        components: {
-            CusCircle,
-        },
     }
 </script>
 
@@ -67,16 +60,15 @@
     .partner {
         padding-top: 100px;
         position: relative;
-        padding-bottom: 70px;
+        padding-bottom: 20px;
     }
     h2 {
-        text-align: left;
-        font-size: 38px;
-        font-weight: 300;
-        text-align: left;
+        font-size: 40px;
+        font-family: Helvetica Neue Medium, Helvetica Neue Medium-Medium;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 83px;
         color: #101010;
-        letter-spacing: 0px;
-        margin-bottom: 65px;
     }
     .partner-item {
         padding-left: 40px;
@@ -102,17 +94,5 @@
             color: #101010;
             letter-spacing: 0px;
         }
-    }
-    .circle1 {
-        right: 5%;
-        top: 140px;
-    }
-    .circle2 {
-        left: 5%;
-        top: 240px;
-    }
-    .circle3 {
-        right: -40px;
-        bottom: 10%;
     }
 </style>

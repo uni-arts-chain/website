@@ -1,45 +1,12 @@
 <template>
     <footer>
         <div class="container">
+            <div class="title">UniArts Foundation</div>
             <div class="top">
-                <div class="bottom-logo">
-                    <img
-                        v-if="$store.state.language == 'en'"
-                        src="@/assets/images/bottom-logo2@2x.png"
-                        :class="{ en: $store.state.language == 'en' }"
-                        alt=""
-                    />
-                    <img
-                        v-else
-                        src="@/assets/images/bottom-logo@2x.png"
-                        alt=""
-                    />
-                    <ul>
-                        <li>
-                            <a></a>
-                        </li>
-                        <li>
-                            <a href="https://t.me/uniarts" target="_blank"></a>
-                        </li>
-                        <li>
-                            <a href="mailto:support@vigchain.com"></a>
-                        </li>
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://polkadot.subscan.io"
-                            ></a>
-                        </li>
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://discord.gg/ujZeGvX"
-                            ></a>
-                        </li>
-                    </ul>
-                </div>
                 <div class="col">
-                    <span>{{ $t("footer.summary") }}</span>
+                    <span style="margin-bottom: 20px;">{{
+                        $t("footer.summary")
+                    }}</span>
                     <ul>
                         <li>
                             <a href="/faq">{{ $t("navbar.articles") }}</a>
@@ -48,7 +15,9 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <span>{{ $t("footer.technology") }}</span>
+                    <span style="margin-bottom: 20px;">{{
+                        $t("footer.technology")
+                    }}</span>
                     <ul>
                         <!-- <li>{{ $t("navbar.testnet") }}</li> -->
                         <li>
@@ -69,7 +38,9 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <span>{{ $t("footer.product") }}</span>
+                    <span style="margin-bottom: 20px;">{{
+                        $t("footer.product")
+                    }}</span>
                     <ul>
                         <li>
                             <a target="_blank" href="https://app.uniarts.me">{{
@@ -85,11 +56,55 @@
                         </li>
                     </ul>
                 </div>
+                <div class="right-text">
+                    <p>
+                        Subscribe to the newsletter to hear about UNIATS updates
+                        and events.
+                    </p>
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="bottom-logo">
+                <ul>
+                    <li>
+                        <a></a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/uniarts" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="mailto:support@vigchain.com"></a>
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://polkadot.subscan.io"
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://discord.gg/ynKCwp5c"
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://twitter.com/NetworkUniarts"
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://medium.com/@UniartsNetwork"
+                        ></a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="bottom">
             <div class="container">
-                ©2019-2020 uniarts.me
+                ©2019-2021 uniarts.me
             </div>
         </div>
     </footer>
@@ -101,13 +116,18 @@
 
 <style scoped lang="scss">
     footer {
-        min-height: 46px;
-        background: #00345c;
+        min-height: 547px;
+        padding-top: 95px;
+        position: relative;
+        background: #ececec;
         flex: 0 0 auto;
     }
     .bottom {
         height: 46px;
-        background: #072642;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /* background: #072642; */
         .container {
             height: 100%;
             display: flex;
@@ -116,16 +136,85 @@
             font-size: 16px;
             font-weight: 400;
             text-align: left;
-            color: #ffffff;
+            color: #101010;
             line-height: 30px;
+        }
+    }
+    .title {
+        font-size: 24px;
+        font-family: Microsoft YaHei Bold, Microsoft YaHei Bold-Bold;
+        font-weight: 700;
+        text-align: left;
+        color: #101010;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .bottom-logo {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        .bottom-logo > img.en {
+            width: 180px;
+            height: 32px;
+        }
+
+        ul {
+            margin-top: 6px;
+        }
+        ul li {
+            float: left;
+            width: 41px;
+            height: 41px;
+            margin-right: 18px;
+        }
+        ul li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: inherit;
+            text-decoration: none;
+        }
+        ul li > img {
+            height: 100%;
+            margin-right: 18px;
+        }
+        ul li:nth-child(1) {
+            background: url(~@/assets/images/wechat@2x.png) no-repeat;
+            background-size: 41px 41px;
+        }
+        ul li:nth-child(2) {
+            background: url(~@/assets/images/feiji@2x.png) no-repeat;
+            background-size: 41px 41px;
+        }
+        ul li:nth-child(3) {
+            background: url(~@/assets/images/youjian@2x.png) no-repeat;
+            background-size: 41px 41px;
+        }
+        ul li:nth-child(4) {
+            background: url(~@/assets/images/github@2x.png) no-repeat;
+            background-size: 41px 41px;
+        }
+        ul li:nth-child(5) {
+            background: url(~@/assets/images/discord@2x.png) no-repeat;
+            background-size: 41px 41px;
+        }
+        ul li:nth-child(6) {
+            background: url(~@/assets/images/twitter@2x.png) no-repeat;
+            background-size: 41px 41px;
+        }
+        ul li:nth-child(7) {
+            background: url(~@/assets/images/medium@2x.png) no-repeat;
+            background-size: 41px 41px;
+        }
+        > img {
+            width: 138px;
         }
     }
     .top {
         overflow: hidden;
         padding-top: 33px;
         padding-bottom: 40px;
-        .col,
-        .bottom-logo {
+        .col {
             display: flex;
             flex-direction: column;
             float: left;
@@ -135,78 +224,58 @@
         }
         .col > span {
             font-size: 18px;
-            font-weight: 600;
+            font-family: PingFang SC Medium, PingFang SC Medium-Medium;
+            font-weight: 500;
             text-align: left;
-            color: #ffffff;
+            color: #101010;
             line-height: 30px;
-            margin-bottom: 30px;
         }
         .col ul li {
-            font-size: 14px;
+            font-size: 16px;
+            font-family: PingFang SC Regular, PingFang SC Regular-Regular;
             font-weight: 400;
             text-align: left;
-            color: #ffffff;
-            margin-bottom: 12px;
+            color: #101010;
+            line-height: 30px;
+            margin-bottom: 15px;
             // line-height: 30px;
         }
         .col ul li a {
             color: inherit;
             text-decoration: none;
         }
-
-        .bottom-logo > img.en {
-            width: 180px;
-            height: 32px;
-        }
-        .bottom-logo {
-            width: 31%;
-            ul {
-                margin-top: 36px;
+        .right-text {
+            float: left;
+            width: 311px;
+            text-align: left;
+            p {
+                font-size: 16px;
+                font-family: PingFang SC Regular, PingFang SC Regular-Regular;
+                font-weight: 400;
+                text-align: left;
+                color: #101010;
+                line-height: 30px;
+                margin-bottom: 35px;
             }
-            ul li {
-                float: left;
-                width: 24px;
-                height: 24px;
-                margin-right: 18px;
-            }
-            ul li a {
-                display: block;
-                width: 100%;
-                height: 100%;
-                color: inherit;
-                text-decoration: none;
-            }
-            ul li > img {
-                height: 100%;
-            }
-            ul li:nth-child(1) {
-                background: url(~@/assets/images/wechat@2x.png) no-repeat;
-                background-size: 24px 24px;
-            }
-            ul li:nth-child(2) {
-                background: url(~@/assets/images/telegram@2x.png) no-repeat;
-                background-size: 24px 24px;
-            }
-            ul li:nth-child(3) {
-                background: url(~@/assets/images/email@2x.png) no-repeat;
-                background-size: 24px 24px;
-            }
-            ul li:nth-child(4) {
-                background: url(~@/assets/images/bottom-github@2x.png) no-repeat;
-                background-size: 24px 24px;
-            }
-            ul li:nth-child(5) {
-                background: url(~@/assets/images/discord@2x.png) no-repeat;
-                background-position: -5px -4px;
-                background-size: 34px 34px;
-                border-radius: 4px;
-            }
-            // ul li:nth-child(5) {
-            //     background: url(~@/assets/images/weibo@2x.png) no-repeat;
-            //     background-size: 24px 24px;
-            // }
-            > img {
-                width: 138px;
+            button {
+                width: 162px;
+                height: 45px;
+                cursor: pointer;
+                opacity: 1;
+                background: linear-gradient(
+                    110deg,
+                    #59b3ff 0%,
+                    #093af7 66%,
+                    #093af7 87%,
+                    #8137dc 95%
+                );
+                border-radius: 23px;
+                font-size: 16px;
+                font-family: PingFang SC Medium, PingFang SC Medium-Medium;
+                font-weight: 500;
+                text-align: center;
+                color: #ffffff;
+                line-height: 30px;
             }
         }
     }

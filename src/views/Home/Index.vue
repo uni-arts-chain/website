@@ -3,6 +3,7 @@
         <Banner></Banner>
         <Components></Components>
         <Structure></Structure>
+        <PhotoFrame />
         <!-- <Model></Model> -->
         <Ecology></Ecology>
         <Route></Route>
@@ -16,6 +17,7 @@
     import Banner from "./Banner.vue"
     import Components from "./Components.vue"
     import Structure from "./Structure.vue"
+    import PhotoFrame from "./PhotoFrame.vue"
     // import Model from "./Model.vue"
     import Ecology from "./Ecology.vue"
     import Route from "./Route.vue"
@@ -32,6 +34,7 @@
             Route,
             Team,
             Partner,
+            PhotoFrame,
             // News,
         },
     }
@@ -40,6 +43,6 @@
 <style scoped lang="scss">
     .home {
         overflow: hidden;
-        padding-bottom: 150px;
+        padding-bottom: 100px;
     }
 </style>

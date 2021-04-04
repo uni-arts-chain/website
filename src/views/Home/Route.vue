@@ -3,255 +3,207 @@
         <div class="container">
             <h2>{{ $t("home.route-title") }}</h2>
             <div class="route-item">
-                <div class="item flag1">
-                    <h3>
-                        <img src="@/assets/images/flag@2x.png" alt="" />{{
-                            $t("home.route-item1-title")
-                        }}
-                    </h3>
-                    <h4>{{ $t("home.route-item1-date") }}</h4>
-                    <div class="totem">
-                        <img src="@/assets/images/totem1@2x.png" alt="" />
+                <div class="item">
+                    <div class="line-body">
+                        <div
+                            class="line"
+                            style="
+                                border-top-left-radius: 2px;
+                                border-bottom-left-radius: 2px;
+                            "
+                        ></div>
+                        <div class="circle"></div>
+                        <div class="line"></div>
                     </div>
-                    <ul>
-                        <li>{{ $t("home.route-item1-li1") }}</li>
-                        <li>{{ $t("home.route-item1-li2") }}</li>
-                        <li>{{ $t("home.route-item1-li3") }}</li>
-                        <li>{{ $t("home.route-item1-li4") }}</li>
-                    </ul>
+                    <div class="content">
+                        <div class="date">
+                            <span class="year">2020</span>
+                            <span class="month">.Q4</span>
+                        </div>
+                        <p>Staking Derivative LDOT Launch</p>
+                        <p>Web3 Foundation Grant Completion</p>
+                    </div>
                 </div>
-                <div class="item flag2">
-                    <h3>
-                        <img src="@/assets/images/flag@2x.png" alt="" />{{
-                            $t("home.route-item2-title")
-                        }}
-                    </h3>
-                    <h4>{{ $t("home.route-item2-date") }}</h4>
-                    <div class="totem">
-                        <img src="@/assets/images/totem2@2x.png" alt="" />
+                <div class="item">
+                    <div class="line-body">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                        <div class="line"></div>
                     </div>
-                    <ul>
-                        <li>{{ $t("home.route-item2-li1") }}</li>
-                        <li>{{ $t("home.route-item2-li2") }}</li>
-                        <li>{{ $t("home.route-item2-li3") }}</li>
-                        <li>{{ $t("home.route-item2-li4") }}</li>
-                        <li>{{ $t("home.route-item2-li5") }}</li>
-                        <li>{{ $t("home.route-item2-li6") }}</li>
-                    </ul>
+                    <div class="content">
+                        <div class="date">
+                            <span class="year">2020</span>
+                            <span class="month">.Q4</span>
+                        </div>
+                        <p>Staking Derivative LDOT Launch</p>
+                        <p>Web3 Foundation Grant Completion</p>
+                    </div>
                 </div>
-                <div class="item flag3">
-                    <h3>
-                        <img src="@/assets/images/flag@2x.png" alt="" />{{
-                            $t("home.route-item3-title")
-                        }}
-                    </h3>
-                    <h4>{{ $t("home.route-item3-date") }}</h4>
-                    <div class="totem">
-                        <img src="@/assets/images/totem3@2x.png" alt="" />
+                <div class="item">
+                    <div class="line-body">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                        <div class="line"></div>
                     </div>
-                    <ul>
-                        <li>{{ $t("home.route-item3-li1") }}</li>
-                        <li>{{ $t("home.route-item3-li2") }}</li>
-                        <li>{{ $t("home.route-item3-li3") }}</li>
-                        <li>{{ $t("home.route-item3-li4") }}</li>
-                        <li>{{ $t("home.route-item3-li5") }}</li>
-                        <li>{{ $t("home.route-item3-li6") }}</li>
-                    </ul>
+                    <div class="content">
+                        <div class="date">
+                            <span class="year">2020</span>
+                            <span class="month">.Q4</span>
+                        </div>
+                        <p>Staking Derivative LDOT Launch</p>
+                        <p>Web3 Foundation Grant Completion</p>
+                    </div>
                 </div>
-                <div class="item flag4">
-                    <h3>
-                        <img src="@/assets/images/flag@2x.png" alt="" />{{
-                            $t("home.route-item4-title")
-                        }}
-                    </h3>
-                    <h4>{{ $t("home.route-item4-date") }}</h4>
-                    <div class="totem">
-                        <img src="@/assets/images/totem4@2x.png" alt="" />
+                <div class="item disabled">
+                    <div class="line-body">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                        <div
+                            class="line"
+                            style="
+                                border-top-right-radius: 2px;
+                                border-bottom-right-radius: 2px;
+                            "
+                        ></div>
                     </div>
-                    <ul>
-                        <li>{{ $t("home.route-item4-li1") }}</li>
-                        <li>{{ $t("home.route-item4-li2") }}</li>
-                        <li>{{ $t("home.route-item4-li3") }}</li>
-                        <li>{{ $t("home.route-item4-li4") }}</li>
-                        <li>{{ $t("home.route-item4-li5") }}</li>
-                        <li>{{ $t("home.route-item4-li6") }}</li>
-                    </ul>
+                    <div class="content" style="margin-right: 0;">
+                        <div class="date">
+                            <span class="year">2020</span>
+                            <span class="month">.Q4</span>
+                        </div>
+                        <p>Staking Derivative LDOT Launch</p>
+                        <p>Web3 Foundation Grant Completion</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <CusCircle class="circle1" r="14" bg="#ffca50"></CusCircle>
-        <CusCircle class="circle2" r="29.5" bg="#ffca50"></CusCircle>
-        <CusCircle class="circle3" r="67" bg="#ffca50"></CusCircle>
-        <CusCircle class="circle4" r="83.5" bg="#50c3ff"></CusCircle>
+        <img class="map1" src="@/assets/images/roadmap1@2x.png" alt="" />
+        <img class="map2" src="@/assets/images/roadmap2@2x.png" alt="" />
     </div>
 </template>
 
 <script>
-    import CusCircle from "@/components/Circle"
     export default {
         name: "Route",
-        components: {
-            CusCircle,
-        },
     }
 </script>
 
 <style scoped lang="scss">
     .route {
-        padding-top: 89px;
+        padding-top: 49px;
+        min-height: 681px;
         position: relative;
         padding-bottom: 100px;
+        background: linear-gradient(0deg, #7bcfff 0%, #ffec86 100%);
+        .map1 {
+            width: 754px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .map2 {
+            width: 703px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
     }
     h2 {
-        text-align: left;
-        font-size: 38px;
-        font-weight: 300;
-        text-align: left;
-        color: #101010;
-        letter-spacing: 0px;
-        margin-bottom: 40px;
+        font-size: 50px;
+        font-family: Microsoft YaHei Bold, Microsoft YaHei Bold-Bold;
+        font-weight: 700;
+        text-align: center;
+        color: #424242;
+        margin-bottom: 84px;
     }
-
     .route-item {
+        overflow: hidden;
+    }
+    .item {
+        float: left;
+        width: 25%;
+    }
+    .line-body {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        .item {
-            max-width: 290px;
-            h3 {
-                font-size: 20px;
-                font-weight: 500;
-                text-align: center;
-                color: #101010;
-                letter-spacing: 0px;
-            }
-            h3 > img {
-                width: 26px;
-                height: 51px;
-            }
-            h4 {
-                font-size: 18px;
-                font-weight: 400;
-                text-align: center;
-                color: #101010;
-                letter-spacing: 0px;
-                margin-bottom: 37px;
-            }
-            .totem {
-                position: relative;
-            }
-            .totem > img {
-                width: 102px;
-                height: 102px;
-                margin-bottom: 42px;
-            }
-            li {
-                margin-left: 10px;
+        align-items: center;
+        margin-bottom: 64px;
+        .line {
+            width: 140.5px;
+            height: 4px;
+            background: #ffffff;
+        }
+        .circle {
+            width: 19px;
+            height: 19px;
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+    }
+    .content::before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 16px solid transparent;
+        border-left: 16px solid transparent;
+        border-bottom: 16px solid white;
+        border-right: 16px solid transparent;
+    }
+    .content {
+        position: relative;
+        background: white;
+        margin: 0px 12.5px;
+        width: 275px;
+        padding: 26px 28px;
+        text-align: left;
+        min-height: 300px;
+        p {
+            font-size: 16px;
+            font-family: Helvetica Neue Regular, Helvetica Neue Regular-Regular;
+            font-weight: 400;
+            text-align: left;
+            color: #101010;
+            margin-bottom: 21px;
+        }
+        .date {
+            margin-bottom: 31px;
+            .year {
+                font-size: 48px;
+                font-family: Microsoft YaHei Bold, Microsoft YaHei Bold-Bold;
+                font-weight: 700;
                 text-align: left;
-                position: relative;
-                padding: 3px 0;
+                color: #101010;
             }
-            li::before {
-                content: "";
-                display: block;
-                position: absolute;
-                left: -10px;
-                top: 11px;
-                width: 4px;
-                height: 4px;
-                border-radius: 50%;
-            }
-        }
-        .item.flag1 {
-            li::before {
-                background-color: #60a2a8;
-            }
-            .totem::before {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 50px;
-                left: -20px;
-                width: 63px;
-                height: 2px;
-                background: linear-gradient(to left, #006871 0%, #ffffff 100%);
-                border-radius: 1px;
-            }
-        }
-        .item.flag2 {
-            li::before {
-                background-color: #b0b0b0;
-            }
-            .totem::before {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 50px;
-                left: -50px;
-                width: 63px;
-                height: 2px;
-                background: linear-gradient(to left, #2d2d2d 0%, #027781 100%);
-                border-radius: 1px;
-            }
-        }
-        .item.flag3 {
-            li::before {
-                background-color: #ecaea7;
-            }
-            .totem::before {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 50px;
-                left: -50px;
-                width: 63px;
-                height: 2px;
-                background: linear-gradient(to left, #bc1400 0%, #2d2d2d 100%);
-                border-radius: 1px;
-            }
-        }
-        .item.flag4 {
-            li::before {
-                background-color: #7291ca;
-            }
-            .totem::before {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 50px;
-                left: -50px;
-                width: 63px;
-                height: 2px;
-                background: linear-gradient(to left, #2d2d2d 0%, #bc1400 100%);
-                border-radius: 1px;
-            }
-            .totem::after {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 50px;
-                right: -40px;
-                width: 63px;
-                height: 2px;
-                background: linear-gradient(to right, #204994 0%, #ffffff 100%);
-                border-radius: 1px;
+            .month {
+                font-size: 30px;
+                font-family: Helvetica Neue Regular,
+                    Helvetica Neue Regular-Regular;
+                font-weight: 400;
+                text-align: left;
+                color: #101010;
             }
         }
     }
-
-    .circle1 {
-        left: 12%;
-        top: 15%;
-    }
-    .circle2 {
-        right: 14%;
-        top: 12%;
-    }
-    .circle3 {
-        top: 40%;
-        left: -67px;
-    }
-    .circle4 {
-        right: -73px;
-        bottom: 26%;
+    .item.disabled {
+        .line-body {
+            opacity: 0.5;
+        }
+        .content {
+            background-color: rgba(256, 256, 256, 0.3);
+        }
+        .content::before {
+            border-bottom-color: rgba(256, 256, 256, 0.3);
+        }
+        .date .year {
+            color: white;
+        }
+        .date .month {
+            color: white;
+        }
+        .content p {
+            color: white;
+        }
     }
 </style>
