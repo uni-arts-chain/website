@@ -78,7 +78,7 @@
                     <li>
                         <a
                             target="_blank"
-                            href="https://polkadot.subscan.io"
+                            href="https://github.com/uni-arts-chain"
                         ></a>
                     </li>
                     <li>

@@ -209,7 +209,7 @@
         .github {
             width: 25px;
             height: 25px;
-            background-image: url(~@/assets/images/github@2x.png);
+            background-image: url(~@/assets/images/github3@2x.png);
             background-size: 25px;
             background-repeat: no-repeat;
         }
