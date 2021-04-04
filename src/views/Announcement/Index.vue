@@ -44,6 +44,9 @@
     }
 </script>
 <style lang="scss" scoped>
+    .index {
+        padding-bottom: 200px;
+    }
     h1 {
         font-size: 38px;
         font-weight: 300;
