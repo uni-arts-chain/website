@@ -1,6 +1,6 @@
 <template>
     <div class="team">
-        <h2 ref="box" class="title">Meet our team</h2>
+        <h2 ref="box" class="title">{{ $t("home.team-title2") }}</h2>
         <div class="item-content">
             <h1
                 v-show="isShow"

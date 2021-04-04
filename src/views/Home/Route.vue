@@ -22,8 +22,11 @@
                             <span class="year">2020</span>
                             <span class="month">.Q4</span>
                         </div>
-                        <p>Staking Derivative LDOT Launch</p>
-                        <p>Web3 Foundation Grant Completion</p>
+                        <p>{{ $t("home.route-item1-li1") }}</p>
+                        <p>{{ $t("home.route-item1-li2") }}</p>
+                        <p>{{ $t("home.route-item1-li3") }}</p>
+                        <p>{{ $t("home.route-item1-li4") }}</p>
+                        <p>{{ $t("home.route-item1-li5") }}</p>
                     </div>
                 </div>
                 <div
@@ -39,8 +42,13 @@
                             <span class="year">2021</span>
                             <span class="month">.Q1</span>
                         </div>
-                        <p>Staking Derivative LDOT Launch</p>
-                        <p>Web3 Foundation Grant Completion</p>
+                        <p>{{ $t("home.route-item2-li1") }}</p>
+                        <p>{{ $t("home.route-item2-li2") }}</p>
+                        <p>{{ $t("home.route-item2-li3") }}</p>
+                        <p>{{ $t("home.route-item2-li4") }}</p>
+                        <p>{{ $t("home.route-item2-li5") }}</p>
+                        <p>{{ $t("home.route-item2-li6") }}</p>
+                        <p>{{ $t("home.route-item2-li7") }}</p>
                     </div>
                 </div>
                 <div
@@ -56,8 +64,10 @@
                             <span class="year">2021</span>
                             <span class="month">.Q2</span>
                         </div>
-                        <p>Staking Derivative LDOT Launch</p>
-                        <p>Web3 Foundation Grant Completion</p>
+                        <p>{{ $t("home.route-item3-li1") }}</p>
+                        <p>{{ $t("home.route-item3-li2") }}</p>
+                        <p>{{ $t("home.route-item3-li3") }}</p>
+                        <p>{{ $t("home.route-item3-li4") }}</p>
                     </div>
                 </div>
                 <div
@@ -79,8 +89,8 @@
                             <span class="year">2021</span>
                             <span class="month">.Q3</span>
                         </div>
-                        <p>Staking Derivative LDOT Launch</p>
-                        <p>Web3 Foundation Grant Completion</p>
+                        <p>{{ $t("home.route-item4-li1") }}</p>
+                        <p>{{ $t("home.route-item4-li2") }}</p>
                     </div>
                 </div>
             </div>
@@ -185,7 +195,7 @@
         width: 275px;
         padding: 26px 28px;
         text-align: left;
-        min-height: 300px;
+        min-height: 465px;
         p {
             font-size: 16px;
             font-family: Helvetica Neue Regular, Helvetica Neue Regular-Regular;

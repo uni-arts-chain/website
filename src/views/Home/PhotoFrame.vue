@@ -1,7 +1,7 @@
 <template>
     <div class="photo-frame">
         <div class="container">
-            <h2>Digital photo frame</h2>
+            <h2>{{ $t("home.Digital-photo-frame") }}</h2>
             <div class="item-body" ref="box">
                 <div
                     class="left animate__animated animate__fadeInUp animate__delay-1s"
@@ -15,8 +15,7 @@
                 >
                     <img src="@/assets/images/you@2x.png" alt="" />
                     <div class="bottom-title">
-                        Digital photo frame served as cold wallet for NFT &
-                        CryptoArts
+                        {{ $t("home.Digital-photo-served") }}
                     </div>
                 </div>
             </div>
@@ -125,8 +124,10 @@
         }
     }
     .bottom-title {
-        width: 100%;
         position: absolute;
+        left: 50%;
+        white-space: nowrap;
+        transform: translateX(-50%);
         bottom: -87px;
         font-size: 18px;
         font-family: Helvetica Neue Regular, Helvetica Neue Regular-Regular;
@@ -139,7 +140,7 @@
         display: block;
         position: absolute;
         top: 4px;
-        left: 20px;
+        left: -30px;
         width: 11px;
         height: 11px;
         opacity: 1;

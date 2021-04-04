@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="container">
-            <div class="title">UniArts Foundation</div>
+            <div class="title">{{ $t("footer.foundation") }}</div>
             <div class="top">
                 <div class="col">
                     <span style="margin-bottom: 20px;">{{
@@ -58,10 +58,9 @@
                 </div>
                 <div class="right-text">
                     <p>
-                        Subscribe to the newsletter to hear about UNIATS updates
-                        and events.
+                        {{ $t("footer.subscribe-text") }}
                     </p>
-                    <button>SUBSCRIBE</button>
+                    <button>{{ $t("footer.subscribe") }}</button>
                 </div>
             </div>
             <div class="bottom-logo">

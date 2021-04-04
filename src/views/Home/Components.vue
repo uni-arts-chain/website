@@ -14,13 +14,9 @@
                             alt=""
                         />
                     </div>
-                    <h3>NFT Maker SDK</h3>
+                    <h3>{{ $t("home.components-item6") }}</h3>
                     <p>
-                        NFT maker SDK tool is a set of mainstream authoring tool
-                        plug-ins. It is used for editing software such as
-                        Photoshop, cubism editor, and Final Cut Pro. It can
-                        forward authoring content to NFT with one click and
-                        publish it on uniarts network
+                        {{ $t("home.components-item6-desc") }}
                     </p>
                 </div>
                 <div
@@ -33,13 +29,9 @@
                             alt=""
                         />
                     </div>
-                    <h3>Cross link bridge</h3>
+                    <h3>{{ $t("home.components-item7") }}</h3>
                     <p>
-                        NFT maker SDK tool is a set of mainstream authoring tool
-                        plug-ins. It is used for editing software such as
-                        Photoshop, cubism editor, and Final Cut Pro. It can
-                        forward authoring content to NFT with one click and
-                        publish it on uniarts network
+                        {{ $t("home.components-item7-desc") }}
                     </p>
                 </div>
                 <div
@@ -52,13 +44,9 @@
                             alt=""
                         />
                     </div>
-                    <h3>DAO Governance</h3>
+                    <h3>{{ $t("home.components-item8") }}</h3>
                     <p>
-                        NFT maker SDK tool is a set of mainstream authoring tool
-                        plug-ins. It is used for editing software such as
-                        Photoshop, cubism editor, and Final Cut Pro. It can
-                        forward authoring content to NFT with one click and
-                        publish it on uniarts network
+                        {{ $t("home.components-item8-desc") }}
                     </p>
                 </div>
                 <div
@@ -71,13 +59,9 @@
                             alt=""
                         />
                     </div>
-                    <h3>Personalized store SDK</h3>
+                    <h3>{{ $t("home.components-item9") }}</h3>
                     <p>
-                        NFT maker SDK tool is a set of mainstream authoring tool
-                        plug-ins. It is used for editing software such as
-                        Photoshop, cubism editor, and Final Cut Pro. It can
-                        forward authoring content to NFT with one click and
-                        publish it on uniarts network
+                        {{ $t("home.components-item9-desc") }}
                     </p>
                 </div>
             </div>
@@ -97,11 +81,15 @@
         mounted() {
             this.top =
                 this.$refs.box.getBoundingClientRect().top - window.innerHeight
-            window.GLOBAL.vbus.$on("windowScroll", this.onScroll)
+            if (this.top > 0) {
+                window.GLOBAL.vbus.$on("windowScroll", this.onScroll)
+            } else {
+                this.isShow = true
+            }
         },
         methods: {
             onScroll(scrollTop) {
-                if (scrollTop - this.top >= 0) {
+                if (scrollTop - this.top >= 100) {
                     this.isShow = true
                     window.GLOBAL.vbus.$off("windowScroll", this.onScroll)
                 }

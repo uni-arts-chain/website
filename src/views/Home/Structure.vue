@@ -8,14 +8,14 @@
                     v-show="isShow"
                     class="web animate__animated animate__fadeInUp animate__delay-1s"
                 >
-                    <div class="bottom-title">UniArts Webpage</div>
+                    <div class="bottom-title">{{ $t("home.web-uniarts") }}</div>
                 </div>
                 <div
                     v-show="isShow"
                     class="app animate__animated animate__fadeInUp animate__delay-2s"
                 >
-                    <div class="bottom-title" style="bottom: -56px;">
-                        UniArts Application
+                    <div class="bottom-title">
+                        {{ $t("home.app-uniarts") }}
                     </div>
                 </div>
             </div>
@@ -110,14 +110,15 @@
     }
     .bottom-title {
         position: absolute;
-        bottom: -65px;
+        display: block;
+        width: 440px;
+        top: 600px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 18px;
         font-family: PingFang SC Medium, PingFang SC Medium-Medium;
         font-weight: 500;
         text-align: left;
-        white-space: nowrap;
         color: #ffffff;
     }
 </style>
