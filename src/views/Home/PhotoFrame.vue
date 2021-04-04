@@ -2,11 +2,17 @@
     <div class="photo-frame">
         <div class="container">
             <h2>Digital photo frame</h2>
-            <div class="item-body">
-                <div class="left">
+            <div class="item-body" ref="box">
+                <div
+                    class="left animate__animated animate__fadeInUp animate__delay-1s"
+                    v-show="isShow"
+                >
                     <img src="@/assets/images/zuo@2x.png" alt="" />
                 </div>
-                <div class="right">
+                <div
+                    class="right animate__animated animate__fadeInUp animate__delay-2s"
+                    v-show="isShow"
+                >
                     <img src="@/assets/images/you@2x.png" alt="" />
                     <div class="bottom-title">
                         Digital photo frame served as cold wallet for NFT &
@@ -29,6 +35,25 @@
                 return this.$store.state.language
             },
         },
+        data() {
+            return {
+                isShow: false,
+                top: 0,
+            }
+        },
+        mounted() {
+            this.top =
+                this.$refs.box.getBoundingClientRect().top - window.innerHeight
+            window.GLOBAL.vbus.$on("windowScroll", this.onScroll)
+        },
+        methods: {
+            onScroll(scrollTop) {
+                if (scrollTop - this.top >= 100) {
+                    this.isShow = true
+                    window.GLOBAL.vbus.$off("windowScroll", this.onScroll)
+                }
+            },
+        },
     }
 </script>
 
@@ -38,6 +63,7 @@
         position: relative;
         padding-bottom: 207px;
         position: relative;
+        min-height: 968px;
     }
     h2 {
         font-size: 38px;

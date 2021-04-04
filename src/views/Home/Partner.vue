@@ -1,9 +1,11 @@
 <template>
     <div class="partner">
         <div class="container">
-            <h2>{{ $t("home.partner-title") }}</h2>
-            <div class="partner-item">
-                <div class="item">
+            <h2 ref="box">{{ $t("home.partner-title") }}</h2>
+            <div class="partner-item" v-show="isShow">
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-1s"
+                >
                     <div class="logo-box">
                         <img
                             src="@/assets/images/polkadot-logo@2x.png"
@@ -12,7 +14,9 @@
                     </div>
                     <span>Polkadot</span>
                 </div>
-                <div class="item">
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-2s"
+                >
                     <div class="logo-box">
                         <img
                             src="@/assets/images/darwinanet@2x.png"
@@ -23,7 +27,9 @@
                     <span>Darwinia</span>
                 </div>
 
-                <div class="item">
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-3s"
+                >
                     <div class="logo-box">
                         <img
                             src="@/assets/images/linzone@2x.png"
@@ -33,13 +39,17 @@
                     </div>
                     <span>LinZone</span>
                 </div>
-                <div class="item">
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-4s"
+                >
                     <div class="logo-box">
                         <img src="@/assets/images/bihu-logo@2x.png" alt="" />
                     </div>
                     <span>Bihu</span>
                 </div>
-                <div class="item">
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-5s"
+                >
                     <div class="logo-box">
                         <img src="@/assets/images/imtoken-logo@2x.png" alt="" />
                     </div>
@@ -53,6 +63,26 @@
 <script>
     export default {
         name: "partner",
+        data() {
+            return {
+                isShow: false,
+                top: 0,
+            }
+        },
+        mounted() {
+            console.log(this.$refs.box.getBoundingClientRect().top)
+            this.top =
+                this.$refs.box.getBoundingClientRect().top - window.innerHeight
+            window.GLOBAL.vbus.$on("windowScroll", this.onScroll)
+        },
+        methods: {
+            onScroll(scrollTop) {
+                if (scrollTop - this.top >= 260) {
+                    this.isShow = true
+                    window.GLOBAL.vbus.$off("windowScroll", this.onScroll)
+                }
+            },
+        },
     }
 </script>
 
@@ -61,6 +91,7 @@
         padding-top: 100px;
         position: relative;
         padding-bottom: 20px;
+        min-height: 393px;
     }
     h2 {
         font-size: 40px;

@@ -10,6 +10,7 @@ const store = new Vuex.Store({
     state: {
         language: getLocale(),
         isProducts: false,
+        // scrollTop: 0,
     },
     mutations: {
         UPDATE_LANGUAGE(state, language) {
@@ -18,6 +19,9 @@ const store = new Vuex.Store({
         UPDATE_PRODUCTS(state, isProducts) {
             state.isProducts = isProducts
         },
+        // UPDATE_SCROLLTOP(state, scrollTop) {
+        //     state.scrollTop = scrollTop;
+        // }
     },
     actions: {
         UpdateLanguage: ({ commit }, language) => {
@@ -27,6 +31,9 @@ const store = new Vuex.Store({
         UpdateIsProducts: ({ commit }, isProducts) => {
             commit("UPDATE_PRODUCTS", isProducts)
         },
+        // UpdateScrollTop: ({ commit }, scrollTop) => {
+        //     commit("UPDATE_SCROLLTOP", scrollTop)
+        // },
     },
 })
 

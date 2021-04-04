@@ -3,7 +3,7 @@
         <div class="body">
             <h1>
                 <img src="@/assets/images/logo.png" alt="" /><strong
-                    >Uni-Arts Chain</strong
+                    >UniArts Chain</strong
                 >
             </h1>
             <h2>SOMETHING BIG IS <strong>COMING SOON</strong></h2>

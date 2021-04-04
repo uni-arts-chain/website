@@ -1,9 +1,18 @@
 <template>
     <div class="team">
-        <h2 class="title">Meet our team</h2>
+        <h2 ref="box" class="title">Meet our team</h2>
         <div class="item-content">
-            <h1>{{ $t("home.team-title") }}</h1>
-            <p v-html="$t('home.team-desc')"></p>
+            <h1
+                v-show="isShow"
+                class="animate__animated animate__fadeInUp animate__delay-1s"
+            >
+                {{ $t("home.team-title") }}
+            </h1>
+            <p
+                v-show="isShow"
+                class="animate__animated animate__fadeInUp animate__delay-2s"
+                v-html="$t('home.team-desc')"
+            ></p>
         </div>
     </div>
 </template>
@@ -11,12 +20,32 @@
 <script>
     export default {
         name: "team",
+        data() {
+            return {
+                isShow: false,
+                top: 0,
+            }
+        },
+        mounted() {
+            this.top =
+                this.$refs.box.getBoundingClientRect().top - window.innerHeight
+            window.GLOBAL.vbus.$on("windowScroll", this.onScroll)
+        },
+        methods: {
+            onScroll(scrollTop) {
+                if (scrollTop - this.top >= 300) {
+                    this.isShow = true
+                    window.GLOBAL.vbus.$off("windowScroll", this.onScroll)
+                }
+            },
+        },
     }
 </script>
 
 <style scoped lang="scss">
     .team {
         padding-top: 105px;
+        min-height: 884px;
     }
     .item-content {
         width: 100%;

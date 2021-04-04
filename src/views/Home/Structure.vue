@@ -1,13 +1,19 @@
 <template>
-    <div class="structure">
+    <div class="structure" ref="box">
         <div class="container">
             <h2>Uniarts Apps</h2>
             <div class="item-body">
                 <img src="@/assets/images/app-bottom-bg@2x.png" alt="" />
-                <div class="web">
+                <div
+                    v-show="isShow"
+                    class="web animate__animated animate__fadeInUp animate__delay-1s"
+                >
                     <div class="bottom-title">UniArts Webpage</div>
                 </div>
-                <div class="app">
+                <div
+                    v-show="isShow"
+                    class="app animate__animated animate__fadeInUp animate__delay-2s"
+                >
                     <div class="bottom-title" style="bottom: -56px;">
                         UniArts Application
                     </div>
@@ -25,6 +31,25 @@
                 return this.$store.state.language
             },
         },
+        data() {
+            return {
+                isShow: false,
+                top: 0,
+            }
+        },
+        mounted() {
+            this.top =
+                this.$refs.box.getBoundingClientRect().top - window.innerHeight
+            window.GLOBAL.vbus.$on("windowScroll", this.onScroll)
+        },
+        methods: {
+            onScroll(scrollTop) {
+                if (scrollTop - this.top >= 400) {
+                    this.isShow = true
+                    window.GLOBAL.vbus.$off("windowScroll", this.onScroll)
+                }
+            },
+        },
     }
 </script>
 
@@ -33,6 +58,7 @@
         padding-top: 100px;
         position: relative;
         padding-bottom: 37px;
+        min-height: 1072px;
     }
     h2 {
         font-size: 38px;

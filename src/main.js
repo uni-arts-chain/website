@@ -6,6 +6,7 @@ import VueI18n from "vue-i18n"
 
 // 引入样式reset
 import "normalize.css"
+import "animate.css"
 
 import "@/plugins/element.js"
 

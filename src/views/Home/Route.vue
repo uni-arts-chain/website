@@ -1,9 +1,11 @@
 <template>
     <div class="route">
         <div class="container">
-            <h2>{{ $t("home.route-title") }}</h2>
-            <div class="route-item">
-                <div class="item">
+            <h2 ref="box">{{ $t("home.route-title") }}</h2>
+            <div class="route-item" v-show="isShow">
+                <div
+                    class="item animate__animated animate__fadeInRight animate__delay-1s"
+                >
                     <div class="line-body">
                         <div
                             class="line"
@@ -24,7 +26,9 @@
                         <p>Web3 Foundation Grant Completion</p>
                     </div>
                 </div>
-                <div class="item">
+                <div
+                    class="item animate__animated animate__fadeInRight animate__delay-2s"
+                >
                     <div class="line-body">
                         <div class="line"></div>
                         <div class="circle"></div>
@@ -39,7 +43,9 @@
                         <p>Web3 Foundation Grant Completion</p>
                     </div>
                 </div>
-                <div class="item">
+                <div
+                    class="item animate__animated animate__fadeInRight animate__delay-3s"
+                >
                     <div class="line-body">
                         <div class="line"></div>
                         <div class="circle"></div>
@@ -54,7 +60,9 @@
                         <p>Web3 Foundation Grant Completion</p>
                     </div>
                 </div>
-                <div class="item disabled">
+                <div
+                    class="item animate__animated animate__fadeInRight animate__delay-4s disabled"
+                >
                     <div class="line-body">
                         <div class="line"></div>
                         <div class="circle"></div>
@@ -85,6 +93,25 @@
 <script>
     export default {
         name: "Route",
+        data() {
+            return {
+                isShow: false,
+                top: 0,
+            }
+        },
+        mounted() {
+            this.top =
+                this.$refs.box.getBoundingClientRect().top - window.innerHeight
+            window.GLOBAL.vbus.$on("windowScroll", this.onScroll)
+        },
+        methods: {
+            onScroll(scrollTop) {
+                if (scrollTop - this.top >= 300) {
+                    this.isShow = true
+                    window.GLOBAL.vbus.$off("windowScroll", this.onScroll)
+                }
+            },
+        },
     }
 </script>
 

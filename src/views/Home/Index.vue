@@ -37,6 +37,21 @@
             PhotoFrame,
             // News,
         },
+        created() {
+            window.document.addEventListener("scroll", this.listener)
+        },
+        methods: {
+            listener() {
+                // this.$store.dispatch("UpdateScrollTop", document.documentElement.scrollTop);
+                window.GLOBAL.vbus.$emit(
+                    "windowScroll",
+                    document.documentElement.scrollTop
+                )
+            },
+        },
+        destroyed() {
+            window.document.removeEventListener("scroll", this.listener)
+        },
     }
 </script>
 

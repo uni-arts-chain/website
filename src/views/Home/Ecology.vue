@@ -1,14 +1,18 @@
 <template>
     <div class="ecology">
         <div class="container">
-            <h2>{{ $t("home.ecology-title") }}</h2>
-            <div class="body">
-                <div class="left">
+            <h2 ref="box">{{ $t("home.ecology-title") }}</h2>
+            <div class="body" v-show="isShow">
+                <div
+                    class="left animate__animated animate__fadeInUp animate__delay-1s"
+                >
                     <img src="@/assets/images/ecology1@2x.png" alt="" />
                     <h3>{{ $t("home.ecology-title-item1-title") }}</h3>
                     <p>{{ $t("home.ecology-title-item1-desc") }}</p>
                 </div>
-                <div class="right">
+                <div
+                    class="right animate__animated animate__fadeInUp animate__delay-2s"
+                >
                     <img src="@/assets/images/ecology2@2x.png" alt="" />
                     <h3>{{ $t("home.ecology-title-item2-title") }}</h3>
                     <p>{{ $t("home.ecology-title-item2-desc") }}</p>
@@ -21,6 +25,25 @@
 <script>
     export default {
         name: "ecology",
+        data() {
+            return {
+                isShow: false,
+                top: 0,
+            }
+        },
+        mounted() {
+            this.top =
+                this.$refs.box.getBoundingClientRect().top - window.innerHeight
+            window.GLOBAL.vbus.$on("windowScroll", this.onScroll)
+        },
+        methods: {
+            onScroll(scrollTop) {
+                if (scrollTop - this.top >= 300) {
+                    this.isShow = true
+                    window.GLOBAL.vbus.$off("windowScroll", this.onScroll)
+                }
+            },
+        },
     }
 </script>
 
@@ -31,6 +54,7 @@
         padding-top: 69px;
         padding-bottom: 86px;
         background-color: #f1faff;
+        min-height: 670px;
     }
     h2 {
         font-size: 38px;

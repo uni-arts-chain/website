@@ -83,6 +83,14 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
+.animate__animated.animate__fadeInUp {
+    --animate-delay: 0.5s;
+}
+
+.animate__animated.animate__fadeInRight {
+    --animate-delay: 0.3s;
+}
+
 .container {
     margin: 0 auto;
     width: 1200px;

@@ -2,8 +2,11 @@
     <div class="components">
         <div class="container">
             <h2>{{ $t("home.components-title") }}</h2>
-            <div class="item-body">
-                <div class="item">
+            <div class="item-body" v-show="isShow">
+                <div
+                    ref="box"
+                    class="item animate__animated animate__fadeInUp animate__delay-1s"
+                >
                     <div class="img-box">
                         <img
                             src="@/assets/images/SDK@2x.png"
@@ -20,7 +23,9 @@
                         publish it on uniarts network
                     </p>
                 </div>
-                <div class="item">
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-2s"
+                >
                     <div class="img-box">
                         <img
                             src="@/assets/images/brige@2x.png"
@@ -37,7 +42,9 @@
                         publish it on uniarts network
                     </p>
                 </div>
-                <div class="item">
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-3s"
+                >
                     <div class="img-box">
                         <img
                             src="@/assets/images/dao@2x.png"
@@ -54,7 +61,9 @@
                         publish it on uniarts network
                     </p>
                 </div>
-                <div class="item">
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-4s"
+                >
                     <div class="img-box">
                         <img
                             src="@/assets/images/shop@2x.png"
@@ -79,6 +88,25 @@
 <script>
     export default {
         name: "components",
+        data() {
+            return {
+                isShow: false,
+                top: 0,
+            }
+        },
+        mounted() {
+            this.top =
+                this.$refs.box.getBoundingClientRect().top - window.innerHeight
+            window.GLOBAL.vbus.$on("windowScroll", this.onScroll)
+        },
+        methods: {
+            onScroll(scrollTop) {
+                if (scrollTop - this.top >= 0) {
+                    this.isShow = true
+                    window.GLOBAL.vbus.$off("windowScroll", this.onScroll)
+                }
+            },
+        },
     }
 </script>
 
@@ -90,6 +118,7 @@
         background: url(~@/assets/images/key-features@2x.png) no-repeat;
         background-size: cover;
         background-position: center;
+        min-height: 1132px;
     }
     h2 {
         opacity: 1;
