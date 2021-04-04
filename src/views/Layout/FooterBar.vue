@@ -102,11 +102,11 @@
                 </ul>
             </div>
         </div>
-        <div class="bottom">
+        <!-- <div class="bottom">
             <div class="container">
                 ©2019-2021 uniarts.me
             </div>
-        </div>
+        </div> -->
     </footer>
 </template>
 
@@ -141,9 +141,9 @@
         }
     }
     .title {
-        font-size: 24px;
+        font-size: 28px;
         font-family: Microsoft YaHei Bold, Microsoft YaHei Bold-Bold;
-        font-weight: 700;
+        font-weight: 800;
         text-align: left;
         color: #101010;
         line-height: 30px;

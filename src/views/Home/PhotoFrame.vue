@@ -1,7 +1,7 @@
 <template>
     <div class="photo-frame">
         <div class="container">
-            <h2>DIGITAl PHOTO FRAME</h2>
+            <h2>Digital photo frame</h2>
             <div class="item-body">
                 <div class="left">
                     <img src="@/assets/images/zuo@2x.png" alt="" />

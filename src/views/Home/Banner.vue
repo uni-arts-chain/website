@@ -16,9 +16,11 @@
     .banner {
         background: #bcd5fd;
         padding-top: 120px;
+        height: 511px;
     }
     .container {
         position: relative;
+        height: 100%;
     }
     .image {
         width: 539px;
