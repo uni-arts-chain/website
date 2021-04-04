@@ -21,6 +21,9 @@
     }
 </script>
 <style lang="scss" scoped>
+    .detail {
+        padding-bottom: 200px;
+    }
     .container {
         padding: 40px 32px;
         text-align: center;
