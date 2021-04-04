@@ -77,7 +77,7 @@
         },
         methods: {
             onScroll(scrollTop) {
-                if (scrollTop - this.top >= 260) {
+                if (scrollTop - this.top >= 100) {
                     this.isShow = true
                     window.GLOBAL.vbus.$off("windowScroll", this.onScroll)
                 }

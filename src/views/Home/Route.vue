@@ -36,8 +36,8 @@
                     </div>
                     <div class="content">
                         <div class="date">
-                            <span class="year">2020</span>
-                            <span class="month">.Q4</span>
+                            <span class="year">2021</span>
+                            <span class="month">.Q1</span>
                         </div>
                         <p>Staking Derivative LDOT Launch</p>
                         <p>Web3 Foundation Grant Completion</p>
@@ -53,8 +53,8 @@
                     </div>
                     <div class="content">
                         <div class="date">
-                            <span class="year">2020</span>
-                            <span class="month">.Q4</span>
+                            <span class="year">2021</span>
+                            <span class="month">.Q2</span>
                         </div>
                         <p>Staking Derivative LDOT Launch</p>
                         <p>Web3 Foundation Grant Completion</p>
@@ -76,8 +76,8 @@
                     </div>
                     <div class="content" style="margin-right: 0;">
                         <div class="date">
-                            <span class="year">2020</span>
-                            <span class="month">.Q4</span>
+                            <span class="year">2021</span>
+                            <span class="month">.Q3</span>
                         </div>
                         <p>Staking Derivative LDOT Launch</p>
                         <p>Web3 Foundation Grant Completion</p>
