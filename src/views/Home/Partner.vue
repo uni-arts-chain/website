@@ -5,6 +5,7 @@
             <div class="partner-item" v-show="isShow">
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
+                    style="margin-left: 0;"
                 >
                     <div class="logo-box">
                         <img
@@ -15,7 +16,7 @@
                     <span>Polkadot</span>
                 </div>
                 <div
-                    class="item animate__animated animate__fadeInUp animate__delay-2s"
+                    class="item animate__animated animate__fadeInUp animate__delay-1s"
                 >
                     <div class="logo-box">
                         <img
@@ -28,7 +29,7 @@
                 </div>
 
                 <div
-                    class="item animate__animated animate__fadeInUp animate__delay-3s"
+                    class="item animate__animated animate__fadeInUp animate__delay-1s"
                 >
                     <div class="logo-box">
                         <img
@@ -40,7 +41,7 @@
                     <span>LinZone</span>
                 </div>
                 <div
-                    class="item animate__animated animate__fadeInUp animate__delay-4s"
+                    class="item animate__animated animate__fadeInUp animate__delay-1s"
                 >
                     <div class="logo-box">
                         <img src="@/assets/images/bihu-logo@2x.png" alt="" />
@@ -48,12 +49,89 @@
                     <span>Bihu</span>
                 </div>
                 <div
-                    class="item animate__animated animate__fadeInUp animate__delay-5s"
+                    class="item animate__animated animate__fadeInUp animate__delay-1s"
+                    style="margin-right: 0;"
+                >
+                    <div class="logo-box" style="width: 116px; height: 84px;">
+                        <img
+                            style="
+                                width: 364px;
+                                height: 115px;
+                                position: relative;
+                                right: -101px;
+                                top: 0px;
+                            "
+                            src="@/assets/images/LancerCapital.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>Lancer Capital</span>
+                </div>
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-2s"
                 >
                     <div class="logo-box">
-                        <img src="@/assets/images/imtoken-logo@2x.png" alt="" />
+                        <img
+                            style="
+                                width: 83px;
+                                height: 71px;
+                                position: relative;
+                            "
+                            src="@/assets/images/TiCapital.png"
+                            alt=""
+                        />
                     </div>
-                    <span>imToken</span>
+                    <span>Ti Capital</span>
+                </div>
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-2s"
+                >
+                    <div class="logo-box">
+                        <img
+                            style="
+                                width: 138px;
+                                height: 138px;
+                                position: relative;
+                                top: 17px;
+                            "
+                            src="@/assets/images/BiTouCapital.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>Bi Tou Capital</span>
+                </div>
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-2s"
+                >
+                    <div class="logo-box">
+                        <img
+                            style="
+                                width: 107px;
+                                height: 65px;
+                                position: relative;
+                            "
+                            src="@/assets/images/Senmeo.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>Senmeo</span>
+                </div>
+
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-2s"
+                >
+                    <div class="logo-box">
+                        <img
+                            style="
+                                width: 67px;
+                                height: 77px;
+                                position: relative;
+                            "
+                            src="@/assets/images/MingLing.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>Ming Ling</span>
                 </div>
             </div>
         </div>
@@ -105,14 +183,19 @@
         padding-left: 40px;
         padding-right: 40px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
         .item {
+            margin: 0 62px;
+            margin-bottom: 86px;
             .logo-box {
                 height: 84px;
                 display: flex;
+                position: relative;
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 40px;
+                overflow: hidden;
             }
             .logo-box > img {
                 height: 100%;

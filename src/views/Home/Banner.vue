@@ -23,13 +23,13 @@
         height: 100%;
     }
     .image {
-        width: 539px;
-        height: 605px;
-        right: 0;
+        width: 459px;
+        height: 374px;
+        right: -100px;
         bottom: 0;
         position: absolute;
         background: url(~@/assets/images/top-pic@2x.png);
-        background-size: 539px 605px;
+        background-size: 100% 100%;
     }
     .title {
         font-size: 33px;

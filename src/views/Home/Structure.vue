@@ -3,7 +3,7 @@
         <div class="container">
             <h2>Uniarts Apps</h2>
             <div class="item-body">
-                <img src="@/assets/images/app-bottom-bg@2x.png" alt="" />
+                <!-- <img src="@/assets/images/app-bottom-bg@2x.png" alt="" /> -->
                 <div
                     v-show="isShow"
                     class="web animate__animated animate__fadeInUp animate__delay-1s"
@@ -58,7 +58,10 @@
         padding-top: 100px;
         position: relative;
         padding-bottom: 37px;
-        min-height: 1072px;
+        height: 1072px;
+    }
+    .container {
+        height: 100%;
     }
     h2 {
         font-size: 38px;
@@ -72,8 +75,9 @@
         width: 100%;
         height: 817px;
         padding: 106px 113px;
-        background: linear-gradient(34deg, #7bcfff 0%, #ffec86 85%);
         display: flex;
+        background: url(~@/assets/images/app-bottom-bg@2x.png) no-repeat;
+        background-size: 1198px 817px;
         align-items: flex-start;
         justify-content: space-between;
         position: relative;

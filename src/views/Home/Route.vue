@@ -155,6 +155,8 @@
     }
     .route-item {
         overflow: hidden;
+        position: relative;
+        z-index: 1;
     }
     .item {
         float: left;
@@ -188,6 +190,10 @@
         border-bottom: 16px solid white;
         border-right: 16px solid transparent;
     }
+    .content::-webkit-scrollbar {
+        display: none; /*ChromeSafari*/
+    }
+
     .content {
         position: relative;
         background: white;
@@ -195,14 +201,18 @@
         width: 275px;
         padding: 26px 28px;
         text-align: left;
-        min-height: 465px;
+        height: 354px;
+        overflow: hidden;
+        scrollbar-width: none; /*Firefox*/
+        -ms-overflow-style: none; /*IE10+*/
+        overflow-y: scroll;
         p {
             font-size: 16px;
             font-family: Helvetica Neue Regular, Helvetica Neue Regular-Regular;
             font-weight: 400;
             text-align: left;
             color: #101010;
-            margin-bottom: 21px;
+            margin-bottom: 15px;
         }
         .date {
             margin-bottom: 31px;

@@ -1,5 +1,49 @@
 <template>
     <div class="components">
+        <img
+            style="
+                position: absolute;
+                width: auto;
+                height: 542px;
+                left: -180px;
+                top: 101px;
+            "
+            src="@/assets/images/uniarts-left1@2x.png"
+            alt=""
+        />
+        <img
+            style="
+                position: absolute;
+                width: auto;
+                height: 375px;
+                right: -140px;
+                top: 138px;
+            "
+            src="@/assets/images/uniarts-left2@2x.png"
+            alt=""
+        />
+        <img
+            style="
+                position: absolute;
+                width: auto;
+                height: 529px;
+                right: -120px;
+                bottom: -83px;
+            "
+            src="@/assets/images/uniarts-right1@2x.png"
+            alt=""
+        />
+        <img
+            style="
+                position: absolute;
+                width: auto;
+                height: 375px;
+                left: -190px;
+                bottom: -94px;
+            "
+            src="@/assets/images/uniarts-right2@2x.png"
+            alt=""
+        />
         <div class="container">
             <h2>{{ $t("home.components-title") }}</h2>
             <div class="item-body" v-show="isShow">
@@ -103,10 +147,9 @@
         padding-top: 96px;
         padding-bottom: 200px;
         position: relative;
-        background: url(~@/assets/images/key-features@2x.png) no-repeat;
-        background-size: cover;
-        background-position: center;
+        background: linear-gradient(0deg, #e5f2ff 0%, #ffffff 99%);
         min-height: 1132px;
+        overflow: hidden;
     }
     h2 {
         opacity: 1;

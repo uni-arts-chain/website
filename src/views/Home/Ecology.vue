@@ -54,7 +54,8 @@
         padding-top: 69px;
         padding-bottom: 86px;
         background-color: #f1faff;
-        min-height: 670px;
+        height: 670px;
+        overflow: hidden;
     }
     h2 {
         font-size: 38px;
