@@ -49,7 +49,7 @@
                     <span>Bihu</span>
                 </div>
                 <div
-                    class="item animate__animated animate__fadeInUp animate__delay-2s"
+                    class="item animate__animated animate__fadeInUp animate__delay-1s"
                     style="margin-right: 0;"
                 >
                     <div class="logo-box">
@@ -67,7 +67,7 @@
                     <span>Bi Tou Capital</span>
                 </div>
                 <div
-                    class="item animate__animated animate__fadeInUp animate__delay-1s"
+                    class="item animate__animated animate__fadeInUp animate__delay-2s"
                     style="margin-left: 0; margin-right: 42px;"
                 >
                     <div class="logo-box" style="width: 116px; height: 84px;">
