@@ -5,7 +5,7 @@
             <div class="partner-item" v-show="isShow">
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
-                    style="margin-left: 0;"
+                    style="margin-left: 24px;"
                 >
                     <div class="logo-box">
                         <img
@@ -49,8 +49,26 @@
                     <span>Bihu</span>
                 </div>
                 <div
-                    class="item animate__animated animate__fadeInUp animate__delay-1s"
+                    class="item animate__animated animate__fadeInUp animate__delay-2s"
                     style="margin-right: 0;"
+                >
+                    <div class="logo-box">
+                        <img
+                            style="
+                                width: 138px;
+                                height: 138px;
+                                position: relative;
+                                top: 17px;
+                            "
+                            src="@/assets/images/BiTouCapital.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>Bi Tou Capital</span>
+                </div>
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-1s"
+                    style="margin-left: 0; margin-right: 42px;"
                 >
                     <div class="logo-box" style="width: 116px; height: 84px;">
                         <img
@@ -69,6 +87,7 @@
                 </div>
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
+                    style="margin-left: 63px; margin-right: 80px;"
                 >
                     <div class="logo-box">
                         <img
@@ -83,25 +102,10 @@
                     </div>
                     <span>Ti Capital</span>
                 </div>
+
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
-                >
-                    <div class="logo-box">
-                        <img
-                            style="
-                                width: 138px;
-                                height: 138px;
-                                position: relative;
-                                top: 17px;
-                            "
-                            src="@/assets/images/BiTouCapital.png"
-                            alt=""
-                        />
-                    </div>
-                    <span>Bi Tou Capital</span>
-                </div>
-                <div
-                    class="item animate__animated animate__fadeInUp animate__delay-2s"
+                    style="margin-left: 100px; margin-right: 120px;"
                 >
                     <div class="logo-box">
                         <img
@@ -183,7 +187,7 @@
         padding-left: 40px;
         padding-right: 40px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
         .item {
             margin: 0 62px;
