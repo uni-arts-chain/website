@@ -89,7 +89,7 @@
                     <li>
                         <a
                             target="_blank"
-                            href="https://twitter.com/NetworkUniarts"
+                            href="https://twitter.com/UniartsNetwork"
                         ></a>
                     </li>
                     <li>
