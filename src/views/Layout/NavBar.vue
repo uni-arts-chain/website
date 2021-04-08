@@ -4,15 +4,14 @@
             <img
                 @click="goHome"
                 class="left"
-                v-if="$store.state.language == 'en'"
-                src="@/assets/images/logo@2x.png"
+                v-if="isProducts"
+                src="@/assets/images/logo-white@2x.png"
             />
             <img
                 @click="goHome"
                 class="left"
-                v-else-if="$store.state.language == 'zh'"
+                v-else
                 src="@/assets/images/logo@2x.png"
-                alt=""
             />
             <div class="right" :class="{ en: $store.state.language == 'en' }">
                 <ul>
