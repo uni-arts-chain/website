@@ -9,7 +9,7 @@
         "news": "新闻"
     },
     "home": {
-        "banner-title": "数字艺术家的加密画笔",
+        "banner-title": "人类和AI艺术家的加密画笔",
         "banner-desc": "Uniarts是基于substrate开发的，用于NFT（非同质资产）创作，拍卖和发行的区块链网络。 Uniarts提供行业级NFT创作工具和跨链解决方案，旨在成为企业，个人甚至AI创作者与区块链网络之间的主要门户，将其各类独特的艺术作品，汇聚于统一的NFT平台。",
         "banner-button": "获取更新",
         "components-title": "核心要素",
@@ -27,8 +27,8 @@
         "components-item6-desc": "NFT Maker SDK工具是一套用于主流媒体编辑软件的插件工具集，支持Photoshop，Cubism Editor和Final Cut Pro等编辑工具。 它可以将图片、音视频、甚至是交互式2D插图和3D模型转换为NFT，并可直接通过编辑器插件将其发布到Uniarts区块链网络上。",
         "components-item7": "Cross-Chain Bridge",
         "components-item7-desc": "通过智能合约和EVM实现链上超轻节点搭建，可实现跨异构区块链网络的资产对应冻结和释放，支持ERC 721和1155标准NFT传输双向跨链传输。",
-        "components-item8": "DAO Governance",
-        "components-item8-desc": "Uniarts Network集成DAO模组，可对资源，注册机构或链上规则进行集体管理...成员发起提案并对其进行投票，也可以提供赠款来激励艺术家将其作品发表在Uniarts网络上。",
+        "components-item8": "NFT + A.I",
+        "components-item8-desc": "Uniarts正与人工智能的专家学者和行业专家合作，将AI艺术创作和机器学习可视化的成果转化为NFT。 同时还将人工智能的个性人格和交互反应映射到Uniarts NFT的Live2D或3D模型中，形成无以伦比的NFT区块链智能。",
         "components-item9": "NFT Mart SDK",
         "components-item9-desc": "NFT Mart SDK在Uniarts拍卖行DAPP的基础上发展而成，它为任何有远见和资源的团队提供了一个框架，可以在没有深厚的区块链知识的情况下开发自己的NFT市场DAPP。",
         "web-uniarts": "基于Uniarts网络及其核心技术功能的去中心化拍卖行",
@@ -82,7 +82,7 @@
         "route-title": "路线图",
         "route-item1-title": "Milestone I",
         "route-item1-date": "expected Q4, 2020",
-        "route-item1-li1": "Pre-Alpha version of Uni-Art Test-Net",
+        "route-item1-li1": "Pre-Alpha version of Uniarts Testnet",
         "route-item1-li2": "Uniarts blockchain Explorer Alpha version",
         "route-item1-li3": "NFT Auction House Alpha version",
         "route-item1-li4": "Community Preparation",
