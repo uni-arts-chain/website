@@ -5,7 +5,7 @@
             <div class="partner-item" v-show="isShow">
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
-                    style="margin-left: 24px;"
+                    style="margin-left: 23px;"
                 >
                     <div class="logo-box">
                         <img
@@ -17,6 +17,7 @@
                 </div>
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
+                    style="margin-left: 72px;"
                 >
                     <div class="logo-box">
                         <img
@@ -30,6 +31,7 @@
 
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
+                    style="margin-right: 50px;"
                 >
                     <div class="logo-box">
                         <img
@@ -50,7 +52,7 @@
                 </div>
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
-                    style="margin-right: 0;"
+                    style="margin-right: 0; margin-left: 30px;"
                 >
                     <div class="logo-box">
                         <img
@@ -68,7 +70,7 @@
                 </div>
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
-                    style="margin-left: 0; margin-right: 42px;"
+                    style="margin-left: 0; margin-right: 32px;"
                 >
                     <div class="logo-box" style="width: 116px; height: 84px;">
                         <img
@@ -87,7 +89,7 @@
                 </div>
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
-                    style="margin-left: 63px; margin-right: 80px;"
+                    style="margin-left: 85px; margin-right: 70px;"
                 >
                     <div class="logo-box">
                         <img
@@ -105,7 +107,24 @@
 
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
-                    style="margin-left: 100px; margin-right: 120px;"
+                    style="margin-left: 85px; margin-right: 60px;"
+                >
+                    <div class="logo-box">
+                        <img
+                            style="
+                                width: 170px;
+                                height: 70px;
+                                position: relative;
+                            "
+                            src="@/assets/images/sssnodes.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>Sssnodes</span>
+                </div>
+
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-2s"
                 >
                     <div class="logo-box">
                         <img
@@ -123,6 +142,7 @@
 
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
+                    style="margin-right: 0; margin-left: 45px;"
                 >
                     <div class="logo-box">
                         <img
@@ -190,7 +210,7 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         .item {
-            margin: 0 62px;
+            margin: 0 65px;
             margin-bottom: 86px;
             .logo-box {
                 height: 84px;
