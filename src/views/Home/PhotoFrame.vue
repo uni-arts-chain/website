@@ -57,6 +57,10 @@
 </script>
 
 <style scoped lang="scss">
+    .container {
+        position: relative;
+        z-index: 1;
+    }
     .photo-frame {
         padding-top: 100px;
         position: relative;
