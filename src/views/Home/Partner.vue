@@ -3,7 +3,7 @@
         <div class="container">
             <h2 ref="box">{{ $t("home.partner-title") }}</h2>
             <div class="partner-item" v-show="isShow">
-                <div
+                <!-- <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
                     style="margin-left: 23px;"
                 >
@@ -14,10 +14,10 @@
                         />
                     </div>
                     <span>Polkadot</span>
-                </div>
+                </div> -->
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
-                    style="margin-left: 72px;"
+                    style="margin-left: 37px; margin-right: 60px;"
                 >
                     <div class="logo-box">
                         <img
@@ -31,7 +31,7 @@
 
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
-                    style="margin-right: 50px;"
+                    style="margin-right: 50px; margin-left: 50px;"
                 >
                     <div class="logo-box">
                         <img
@@ -44,6 +44,7 @@
                 </div>
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
+                    style="margin-left: 60px; margin-right: 60px;"
                 >
                     <div class="logo-box">
                         <img src="@/assets/images/bihu-logo@2x.png" alt="" />
@@ -52,7 +53,7 @@
                 </div>
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-1s"
-                    style="margin-right: 0; margin-left: 30px;"
+                    style="margin-left: 80px; margin-right: 40px;"
                 >
                     <div class="logo-box">
                         <img
@@ -69,8 +70,25 @@
                     <span>Bi Tou Capital</span>
                 </div>
                 <div
+                    class="item animate__animated animate__fadeInUp animate__delay-1s"
+                    style="margin-left: 50px; margin-right: 0;"
+                >
+                    <div class="logo-box">
+                        <img
+                            style="
+                                width: 67px;
+                                height: 77px;
+                                position: relative;
+                            "
+                            src="@/assets/images/CarbonBlue.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>CarbonBlue</span>
+                </div>
+                <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
-                    style="margin-left: 0; margin-right: 32px;"
+                    style="margin-left: 25px; margin-right: 60px;"
                 >
                     <div class="logo-box" style="width: 116px; height: 84px;">
                         <img
@@ -89,7 +107,7 @@
                 </div>
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
-                    style="margin-left: 85px; margin-right: 70px;"
+                    style="margin-left: 102px; margin-right: 50px;"
                 >
                     <div class="logo-box">
                         <img
@@ -107,7 +125,7 @@
 
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
-                    style="margin-left: 85px; margin-right: 60px;"
+                    style="margin-left: 85px; margin-right: 50px;"
                 >
                     <div class="logo-box">
                         <img
@@ -125,6 +143,7 @@
 
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
+                    style="margin-left: 55px;"
                 >
                     <div class="logo-box">
                         <img
@@ -142,7 +161,7 @@
 
                 <div
                     class="item animate__animated animate__fadeInUp animate__delay-2s"
-                    style="margin-right: 0; margin-left: 45px;"
+                    style="margin-right: 0; margin-left: 48px;"
                 >
                     <div class="logo-box">
                         <img
@@ -156,23 +175,6 @@
                         />
                     </div>
                     <span>Ming Ling</span>
-                </div>
-                <div
-                    class="item animate__animated animate__fadeInUp animate__delay-3s"
-                    style="margin-left: 10px;"
-                >
-                    <div class="logo-box">
-                        <img
-                            style="
-                                width: 67px;
-                                height: 77px;
-                                position: relative;
-                            "
-                            src="@/assets/images/CarbonBlue.png"
-                            alt=""
-                        />
-                    </div>
-                    <span>CarbonBlue</span>
                 </div>
             </div>
         </div>
