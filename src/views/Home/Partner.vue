@@ -176,6 +176,23 @@
                     </div>
                     <span>Ming Ling</span>
                 </div>
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-3s"
+                    style="margin-left: 22px; margin-right: 60px;"
+                >
+                    <div class="logo-box">
+                        <img
+                            style="
+                                width: 90px;
+                                height: 50px;
+                                position: relative;
+                            "
+                            src="@/assets/images/AlvesVentures.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>Alves Ventures</span>
+                </div>
             </div>
         </div>
     </div>
