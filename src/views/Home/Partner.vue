@@ -138,7 +138,7 @@
                             alt=""
                         />
                     </div>
-                    <span>Sssnodes</span>
+                    <span>SSSnodes</span>
                 </div>
 
                 <div
@@ -192,6 +192,23 @@
                         />
                     </div>
                     <span>Alves Ventures</span>
+                </div>
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-3s"
+                    style="margin-left: 63px; margin-right: 60px;"
+                >
+                    <div class="logo-box">
+                        <img
+                            style="
+                                width: 160px;
+                                height: auto;
+                                position: relative;
+                            "
+                            src="@/assets/images/paka.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>PAKA</span>
                 </div>
             </div>
         </div>

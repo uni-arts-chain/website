@@ -1,7 +1,7 @@
 <template>
     <div class="structure" ref="box">
         <div class="container">
-            <h2>Uniarts Apps</h2>
+            <h2>UniArts Apps</h2>
             <div class="item-body">
                 <!-- <img src="@/assets/images/app-bottom-bg@2x.png" alt="" /> -->
                 <div
