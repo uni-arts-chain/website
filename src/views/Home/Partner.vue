@@ -210,6 +210,40 @@
                     </div>
                     <span>PAKA</span>
                 </div>
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-3s"
+                    style="margin-left: 41px; margin-right: 50px;"
+                >
+                    <div class="logo-box">
+                        <img
+                            style="
+                                width: 160px;
+                                height: auto;
+                                position: relative;
+                            "
+                            src="@/assets/images/Dealean-capital.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>Dealean Capital</span>
+                </div>
+                <div
+                    class="item animate__animated animate__fadeInUp animate__delay-3s"
+                    style="margin-left: 45px; margin-right: 40px;"
+                >
+                    <div class="logo-box">
+                        <img
+                            style="
+                                width: 110px;
+                                height: auto;
+                                position: relative;
+                            "
+                            src="@/assets/images/7-O'Clock.png"
+                            alt=""
+                        />
+                    </div>
+                    <span>7 O'Clock Capital</span>
+                </div>
             </div>
         </div>
     </div>
