@@ -1,23 +1,19 @@
 <template>
     <div class="structure" ref="box">
         <div class="container">
-            <h2>UniArts Apps</h2>
+            <h2>云画链区块链浏览器</h2>
             <div class="item-body">
                 <!-- <img src="@/assets/images/app-bottom-bg@2x.png" alt="" /> -->
                 <div
                     v-show="isShow"
                     class="web animate__animated animate__fadeInUp animate__delay-1s"
-                >
-                    <div class="bottom-title">{{ $t("home.web-uniarts") }}</div>
+                ></div>
+            </div>
+            <div class="explorer-container">
+                <div class="explorer-desc">
+                    实时更新区块信息 查询地址持有的藏品 查询转增信息
                 </div>
-                <div
-                    v-show="isShow"
-                    class="app animate__animated animate__fadeInUp animate__delay-2s"
-                >
-                    <div class="bottom-title">
-                        {{ $t("home.app-uniarts") }}
-                    </div>
-                </div>
+                <button class="explorer-button">使用云画链浏览器</button>
             </div>
         </div>
     </div>
@@ -58,7 +54,7 @@
         padding-top: 100px;
         position: relative;
         padding-bottom: 37px;
-        height: 1072px;
+        height: 1232px;
     }
     .container {
         height: 100%;
@@ -79,7 +75,7 @@
         background: url(~@/assets/images/app-bottom-bg@2x.png) no-repeat;
         background-size: 1198px 817px;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: center;
         position: relative;
         img {
             position: absolute;
@@ -124,5 +120,28 @@
         font-weight: 500;
         text-align: left;
         color: #ffffff;
+    }
+
+    .explorer-container {
+        margin-top: 40px;
+        width: 100%;
+        background-color: #c4dafd;
+        border: 1px solid #bdc4ce;
+        padding: 20px 40px;
+        .explorer-desc {
+            font-size: 19px;
+        }
+        .explorer-button {
+            margin-top: 15px;
+            border-radius: 4px;
+            border: 1px solid #bdc4ce;
+            background-color: white;
+            width: 405px;
+            height: 41px;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 15px;
+            cursor: pointer;
+        }
     }
 </style>

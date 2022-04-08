@@ -4,78 +4,8 @@
             <img
                 @click="goHome"
                 class="left"
-                v-if="isProducts"
-                src="@/assets/images/logo-white@2x.png"
-            />
-            <img
-                @click="goHome"
-                class="left"
-                v-else
                 src="@/assets/images/logo@2x.png"
             />
-            <div class="right" :class="{ en: $store.state.language == 'en' }">
-                <ul>
-                    <li>
-                        <a
-                            target="_blank"
-                            href="https://github.com/uni-arts-chain/UniArts-white-paper"
-                            >{{ $t("navbar.white-page") }}</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            target="_blank"
-                            href="https://telemetry.polkadot.io/#list/Uni-Arts%20Staging%20network
-"
-                            >{{ $t("navbar.testnet") }}</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            target="_blank"
-                            href="http://explorer.uniarts.me/#/explorer"
-                            >{{ $t("navbar.explorer") }}</a
-                        >
-                    </li>
-                    <li :class="{ active: $route.path == '/products' }">
-                        <router-link to="/products">{{
-                            $t("navbar.products")
-                        }}</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/faq">{{
-                            $t("navbar.articles")
-                        }}</router-link>
-                    </li>
-                    <!-- <li>
-                        <router-link to="/news">{{
-                            $t("navbar.news")
-                        }}</router-link>
-                    </li> -->
-                    <li
-                        class="other"
-                        style="margin-left: 20; margin-right: 0px;"
-                    >
-                        <a
-                            class="wallet"
-                            target="_blank"
-                            href="https://app.uniarts.me"
-                        ></a>
-                        <a
-                            class="github"
-                            target="_blank"
-                            href="https://github.com/uni-arts-chain"
-                        ></a>
-                        <div
-                            @click="changeLanguage"
-                            :class="{
-                                'lang en': lang == 'en',
-                                'lang zh-cn': lang == 'zh',
-                            }"
-                        ></div>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 </template>
@@ -154,7 +84,8 @@
     }
 
     img.left {
-        height: 45px;
+        height: 140px;
+        margin-left: -30px;
         cursor: pointer;
     }
     .right.en {

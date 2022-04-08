@@ -5,17 +5,6 @@
             <div class="top">
                 <div class="col">
                     <span style="margin-bottom: 20px;">{{
-                        $t("footer.summary")
-                    }}</span>
-                    <ul>
-                        <li>
-                            <a href="/faq">{{ $t("navbar.articles") }}</a>
-                        </li>
-                        <li>{{ $t("footer.contact-us") }}</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <span style="margin-bottom: 20px;">{{
                         $t("footer.technology")
                     }}</span>
                     <ul>
@@ -63,43 +52,6 @@
                     <button>{{ $t("footer.subscribe") }}</button>
                 </div>
             </div>
-            <div class="bottom-logo">
-                <ul>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/uniarts" target="_blank"></a>
-                    </li>
-                    <li>
-                        <a href="mailto:support@vigchain.com"></a>
-                    </li>
-                    <li>
-                        <a
-                            target="_blank"
-                            href="https://github.com/uni-arts-chain"
-                        ></a>
-                    </li>
-                    <li>
-                        <a
-                            target="_blank"
-                            href="https://discord.gg/ynKCwp5c"
-                        ></a>
-                    </li>
-                    <li>
-                        <a
-                            target="_blank"
-                            href="https://twitter.com/UniartsNetwork"
-                        ></a>
-                    </li>
-                    <li>
-                        <a
-                            target="_blank"
-                            href="https://medium.com/@UniartsNetwork"
-                        ></a>
-                    </li>
-                </ul>
-            </div>
         </div>
         <!-- <div class="bottom">
             <div class="container">
@@ -115,7 +67,7 @@
 
 <style scoped lang="scss">
     footer {
-        min-height: 547px;
+        min-height: 447px;
         padding-top: 95px;
         position: relative;
         background: #ececec;

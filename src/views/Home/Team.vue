@@ -2,17 +2,19 @@
     <div class="team">
         <h2 ref="box" class="title">{{ $t("home.team-title2") }}</h2>
         <div class="item-content">
-            <h1
-                v-show="isShow"
-                class="animate__animated animate__fadeInUp animate__delay-1s"
-            >
-                {{ $t("home.team-title") }}
-            </h1>
-            <p
-                v-show="isShow"
-                class="animate__animated animate__fadeInUp animate__delay-2s"
-                v-html="$t('home.team-desc')"
-            ></p>
+            <div class="container">
+                <h1
+                    v-show="isShow"
+                    class="animate__animated animate__fadeInUp animate__delay-1s"
+                >
+                    {{ $t("home.team-title") }}
+                </h1>
+                <p
+                    v-show="isShow"
+                    class="animate__animated animate__fadeInUp animate__delay-2s"
+                    v-html="$t('home.team-desc')"
+                ></p>
+            </div>
         </div>
     </div>
 </template>
@@ -46,12 +48,14 @@
     .team {
         padding-top: 105px;
         min-height: 884px;
+        width: 100%;
     }
     .item-content {
         width: 100%;
         height: 631px;
+        overflow: hidden;
         background: url(~@/assets/images/team@2x.png) no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: center;
         display: flex;
         flex-direction: column;
@@ -70,7 +74,7 @@
         font-size: 46px;
         font-family: Helvetica Neue Regular, Helvetica Neue Regular-Regular;
         font-weight: 400;
-        text-align: left;
+        text-align: center;
         padding-bottom: 55px;
         color: #fefefe;
         position: relative;
@@ -97,5 +101,7 @@
         text-align: center;
         color: #fefefe;
         text-shadow: 1px 2px 4px rgba(14, 41, 87, 0.93);
+        max-width: 80%;
+        margin: 0 auto;
     }
 </style>

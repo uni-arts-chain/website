@@ -1,99 +1,8 @@
 <template>
     <div class="route">
-        <div class="container">
-            <h2 ref="box">{{ $t("home.route-title") }}</h2>
-            <div class="route-item" v-show="isShow">
-                <div
-                    class="item animate__animated animate__fadeInRight animate__delay-1s"
-                >
-                    <div class="line-body">
-                        <div
-                            class="line"
-                            style="
-                                border-top-left-radius: 2px;
-                                border-bottom-left-radius: 2px;
-                            "
-                        ></div>
-                        <div class="circle"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div class="content">
-                        <div class="date">
-                            <span class="year">2020</span>
-                            <span class="month">.Q4</span>
-                        </div>
-                        <p>{{ $t("home.route-item1-li1") }}</p>
-                        <p>{{ $t("home.route-item1-li2") }}</p>
-                        <p>{{ $t("home.route-item1-li3") }}</p>
-                        <p>{{ $t("home.route-item1-li4") }}</p>
-                        <p>{{ $t("home.route-item1-li5") }}</p>
-                    </div>
-                </div>
-                <div
-                    class="item animate__animated animate__fadeInRight animate__delay-2s"
-                >
-                    <div class="line-body">
-                        <div class="line"></div>
-                        <div class="circle"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div class="content">
-                        <div class="date">
-                            <span class="year">2021</span>
-                            <span class="month">.Q1</span>
-                        </div>
-                        <p>{{ $t("home.route-item2-li1") }}</p>
-                        <p>{{ $t("home.route-item2-li2") }}</p>
-                        <p>{{ $t("home.route-item2-li3") }}</p>
-                        <p>{{ $t("home.route-item2-li4") }}</p>
-                        <p>{{ $t("home.route-item2-li5") }}</p>
-                        <p>{{ $t("home.route-item2-li6") }}</p>
-                        <p>{{ $t("home.route-item2-li7") }}</p>
-                    </div>
-                </div>
-                <div
-                    class="item animate__animated animate__fadeInRight animate__delay-3s"
-                >
-                    <div class="line-body">
-                        <div class="line"></div>
-                        <div class="circle"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div class="content">
-                        <div class="date">
-                            <span class="year">2021</span>
-                            <span class="month">.Q2</span>
-                        </div>
-                        <p>{{ $t("home.route-item3-li1") }}</p>
-                        <p>{{ $t("home.route-item3-li2") }}</p>
-                        <p>{{ $t("home.route-item3-li3") }}</p>
-                        <p>{{ $t("home.route-item3-li4") }}</p>
-                    </div>
-                </div>
-                <div
-                    class="item animate__animated animate__fadeInRight animate__delay-4s disabled"
-                >
-                    <div class="line-body">
-                        <div class="line"></div>
-                        <div class="circle"></div>
-                        <div
-                            class="line"
-                            style="
-                                border-top-right-radius: 2px;
-                                border-bottom-right-radius: 2px;
-                            "
-                        ></div>
-                    </div>
-                    <div class="content" style="margin-right: 0;">
-                        <div class="date">
-                            <span class="year">2021</span>
-                            <span class="month">.Q3</span>
-                        </div>
-                        <p>{{ $t("home.route-item4-li1") }}</p>
-                        <p>{{ $t("home.route-item4-li2") }}</p>
-                    </div>
-                </div>
-            </div>
+        <h2 ref="box">{{ $t("home.route-title") }}</h2>
+        <div class="router-img">
+            <img src="@/assets/images/route.png" alt="" />
         </div>
         <img class="map1" src="@/assets/images/roadmap1@2x.png" alt="" />
         <img class="map2" src="@/assets/images/roadmap2@2x.png" alt="" />
@@ -127,10 +36,12 @@
 
 <style scoped lang="scss">
     .route {
+        width: 100%;
         padding-top: 49px;
         min-height: 681px;
         position: relative;
         padding-bottom: 100px;
+        overflow: hidden;
         background: linear-gradient(0deg, #7bcfff 0%, #ffec86 100%);
         .map1 {
             width: 754px;
@@ -251,6 +162,16 @@
         }
         .content p {
             color: white;
+        }
+    }
+
+    .router-img {
+        max-width: 100%;
+        width: 1300px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            margin-left: 30px;
         }
     }
 </style>
