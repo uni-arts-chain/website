@@ -1,26 +1,35 @@
 <template>
-    <div class="structure" ref="box">
+    <div class="application" ref="box">
         <div class="container">
-            <h2>云画链区块链浏览器</h2>
-            <div class="item-body">
-                <div
-                    v-show="isShow"
-                    class="web animate__animated animate__fadeInUp animate__delay-1s"
-                ></div>
-            </div>
-            <div class="explorer-container">
-                <div class="explorer-desc">
-                    实时更新区块信息 查询地址持有的藏品 查询转增信息
+            <h2>生态应用</h2>
+            <div class="app-info">
+                <img src="@/assets/images/jiama-logo.png" alt="" />
+                <div class="app-name">
+                    <div class="name">加码射线</div>
+                    <img src="@/assets/images/jiama-name-logo.png" alt="" />
+                    <div class="app-decs">
+                        泛二次元数字收藏
+                    </div>
                 </div>
-                <button class="explorer-button">使用云画链浏览器</button>
+                <a
+                    style="color: black;"
+                    href="https://app.jiamashexian.com/pages/download"
+                    target="_blank"
+                    class="download"
+                    >下载</a
+                >
             </div>
+            <div
+                v-show="isShow"
+                class="web animate__animated animate__fadeInUp animate__delay-1s"
+            ></div>
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "structure",
+        name: "application",
         computed: {
             locale() {
                 return this.$store.state.language
@@ -49,7 +58,7 @@
 </script>
 
 <style scoped lang="scss">
-    .structure {
+    .application {
         padding-top: 100px;
         position: relative;
         padding-bottom: 37px;
@@ -66,34 +75,16 @@
         margin-bottom: 75px;
         color: #101010;
     }
-    .item-body {
-        width: 100%;
-        height: 917px;
-        padding: 106px 113px;
-        display: flex;
-        background: url(~@/assets/images/app-bottom-bg@2x.png) no-repeat;
-        background-size: 1198px 917px;
-        align-items: flex-start;
-        justify-content: center;
-        position: relative;
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 20px;
-            left: 0;
-        }
-    }
 
     .web {
-        background: url(~@/assets/images/web@2x.png) no-repeat;
+        background: url(~@/assets/images/jiama-app-info.png) no-repeat;
         background-size: 100% auto;
         background-position: center;
         position: relative;
         width: 1042px;
         height: 775px;
         opacity: 1;
-        box-shadow: 0px 1px 28px 2px rgba(178, 178, 178, 0.74);
+        margin: 0 auto;
     }
     .app {
         background: url(~@/assets/images/app@2x.png) no-repeat;
@@ -139,6 +130,55 @@
             text-align: center;
             padding: 5px 0;
             font-size: 15px;
+            cursor: pointer;
+        }
+    }
+    .app-info {
+        width: 957px;
+        height: 222px;
+        border-color: rgb(187, 187, 187);
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 7px;
+        font-size: 14px;
+        padding: 0px;
+        text-align: center;
+        line-height: 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        margin-bottom: 40px;
+        .app-name {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .name {
+                font-size: 25px;
+                font-weight: 500;
+            }
+            .app-decs {
+                font-size: 25px;
+                font-weight: 500;
+            }
+            > img {
+                width: 145px;
+                height: 49px;
+                margin: 20px 0;
+            }
+        }
+        .download {
+            width: 160px;
+            width: 170px;
+            height: 53px;
+            border-color: rgb(187, 187, 187);
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 4px;
+            font-size: 15px;
+            text-align: center;
+            line-height: 53px;
             cursor: pointer;
         }
     }
