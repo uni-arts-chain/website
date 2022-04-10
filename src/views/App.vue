@@ -4,18 +4,15 @@
         <main>
             <router-view></router-view>
         </main>
-        <FooterBar></FooterBar>
     </div>
 </template>
 
 <script>
     import NavBar from "@/views/Layout/NavBar"
-    import FooterBar from "@/views/Layout/FooterBar"
     export default {
         name: "App",
         components: {
             NavBar,
-            FooterBar,
         },
         data() {
             return {}

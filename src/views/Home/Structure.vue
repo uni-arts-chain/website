@@ -12,7 +12,12 @@
                 <div class="explorer-desc">
                     实时更新区块信息 查询地址持有的藏品 查询转增信息
                 </div>
-                <button class="explorer-button">使用云画链浏览器</button>
+                <a
+                    class="explorer-button"
+                    href="https://explorer.cpaintchain.cn"
+                    target="_blank"
+                    >使用云画链浏览器</a
+                >
             </div>
         </div>
     </div>
@@ -130,16 +135,20 @@
             font-size: 19px;
         }
         .explorer-button {
+            margin: 0 auto;
             margin-top: 15px;
             border-radius: 4px;
             border: 1px solid #bdc4ce;
             background-color: white;
+            display: block;
             width: 405px;
             height: 41px;
             text-align: center;
+            line-height: 31px;
             padding: 5px 0;
             font-size: 15px;
             cursor: pointer;
+            color: black;
         }
     }
 </style>
