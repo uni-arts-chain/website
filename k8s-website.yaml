@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: registry.cn-hongkong.aliyuncs.com/tatmas/uni-arts-frontend
+        image: registry.cn-hongkong.aliyuncs.com/uniarts/uni-arts-frontend:php
         resources:
           requests:
             memory: "128Mi"
@@ -56,19 +56,9 @@ metadata:
 spec:
   tls:
   - hosts:
-    - uniarts.me
-    secretName: uni-arts-tls
-  - hosts:
     - uniarts.network
     secretName: uni-arts-network-tls
   rules:
-  - host: uniarts.me
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: frontend
-          servicePort: 80
   - host: uniarts.network
     http:
       paths:
@@ -76,4 +66,3 @@ spec:
         backend:
           serviceName: frontend
           servicePort: 80
-
